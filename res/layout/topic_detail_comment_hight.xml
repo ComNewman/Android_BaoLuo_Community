@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" >
+
+    <com.baoluo.community.ui.customview.RoundImageView
+        android:id="@+id/iv_topic_hight_comment_head"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_topic_hight_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_topic_hight_comment_nick"
+        android:layout_marginRight="10dp"
+        android:text="now"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_topic_hight_comment_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_topic_hight_comment_nick"
+        android:layout_below="@+id/tv_topic_hight_comment_nick"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/tv_topic_hight_comment_time"
+        android:text="51586516"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_topic_hight_comment_pics"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignLeft="@+id/tv_topic_hight_comment_tag"
+        android:layout_below="@+id/tv_topic_hight_comment_tag"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/bg_ht_gaobige_nor"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/iv_topic_hight_comment_pic"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignLeft="@+id/tv_topic_hight_comment_tag"
+        android:layout_below="@+id/tv_topic_hight_comment_tag"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="11dp"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/ib_topic_hight_comment_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/iv_topic_hight_comment_pics"
+        android:layout_marginRight="9dp"
+        android:background="@color/transparent"
+        android:src="@drawable/ib_topic_high_comment_show" />
+    <View 
+        android:id="@+id/view_fg"
+        android:background="@color/bg_fenge"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/ib_topic_hight_comment_show"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_topic_hight_comment_praiseandcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/ib_topic_hight_comment_show"
+        android:background="@drawable/bg_htxq_tanchukuang"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/btn_topic_hight_comment_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@color/transparent"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/selector_topic_comment_hight_praise" />
+
+        <View
+            android:id="@+id/view_comment_split"
+            android:layout_width="0.3dip"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_topic_hight_comment_praise"
+            android:background="#4c4c4c" />
+
+        <ImageButton
+            android:id="@+id/btn_topic_hight_comment_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/view_comment_split"
+            android:background="@color/transparent"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/ic_pinglun_nor" />
+
+        <View
+            android:id="@+id/view_comment_split1"
+            android:layout_width="0.3dip"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_topic_hight_comment_comment"
+            android:background="#4c4c4c" />
+
+        <ImageButton
+            android:id="@+id/btn_topic_hight_comment_trample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view_comment_split1"
+            android:background="@color/transparent"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/selector_topic_comment_hight_trample" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_topic_hight_comment_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_topic_hight_comment_head"
+        android:layout_toRightOf="@+id/iv_topic_hight_comment_head"
+        android:gravity="center_vertical"
+        android:text="吃货集中营"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+</RelativeLayout>

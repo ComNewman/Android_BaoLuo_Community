@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="#f7f5f5">
+
+    <RelativeLayout
+        android:id="@+id/rl_contacts_search_tag"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:background="#eaeaea"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="8dp" >
+
+        <Button
+            android:id="@+id/btn_cance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ll_search_tag"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#4E96DF"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_search_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_cance"
+            android:background="@drawable/topic_search_tag"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/ib_contacts_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:src="@drawable/topic_search_icon" />
+
+            <EditText
+                android:id="@+id/et_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@color/transparent"
+                android:singleLine="true"
+                android:textColor="#717680"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_contacts_search_tag"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="@drawable/topic_search_result_spilit"
+        android:background="@color/transparent"/>
+
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_im_search.xml -->

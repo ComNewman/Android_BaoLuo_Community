@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rl_attend">
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        lls:left_icon="@drawable/ic_fanhui_nor"/>
+	<RelativeLayout
+        android:id="@+id/ll_attend_search"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/hv_head"
+        android:background="@drawable/bg_contacts_search" >
+
+        <EditText
+            android:id="@+id/et_attend_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="#717680"
+            android:hint="拼音搜索"
+            android:layout_toLeftOf="@+id/img_attend_search"
+            android:background="@color/transparent" />
+
+        <ImageView
+            android:id="@+id/img_attend_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/btn_contacts_search" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_attend_search" >
+
+        <ListView
+            android:id="@+id/lv_attend_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_attend_dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_humor_content"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <com.baoluo.community.ui.customview.SideBar
+        android:id="@+id/attend_sb_side_bar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ll_attend_search"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

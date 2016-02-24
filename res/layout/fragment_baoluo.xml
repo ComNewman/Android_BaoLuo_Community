@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        lls:title_value="@string/head_title_baoluo" />
+
+    <RelativeLayout
+        android:id="@+id/rl_new_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hv_head"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/bg_baoluo_pics" >
+
+        <ImageView
+            android:id="@+id/iv_new_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img_baoluo_new_user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_new_user"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="-3dp"
+            android:layout_toRightOf="@id/iv_new_user"
+            android:text="新生报到"
+            android:textColor="#333333"
+            android:textSize="@dimen/index_channel_font_size" />
+
+        <LinearLayout
+            android:id="@+id/rl_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_new_user"
+            android:layout_marginTop="11dp" >
+
+            <com.baoluo.community.ui.customview.HorizontalListView
+                android:id="@+id/hlv_new_user"
+                android:layout_width="match_parent"
+                android:layout_height="56dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_humor_fenge"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/rl_new_user"
+        android:background="#f7f5f5" />
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v_humor_fenge"
+        android:background="#ffffff"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rl_humor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_baoluo_pics" >
+
+                <TextView
+                    android:id="@+id/tv_humor_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="今日心情"
+                    android:textColor="#505050"
+                    android:textSize="@dimen/index_channel_font_size" />
+
+                <ImageView
+                    android:id="@+id/iv_humor_1"
+                    android:layout_width="@dimen/index_img_height"
+                    android:layout_height="@dimen/index_img_height"
+                    android:layout_below="@id/tv_humor_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_baoluo_pic"
+                    android:padding="@dimen/index_img_border_width"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bitboy" />
+
+                <ImageView
+                    android:id="@+id/iv_home_humor_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/iv_humor_1"
+                    android:layout_alignTop="@+id/iv_humor_1"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/bg_home_hot" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_home_image_bottom_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignBottom="@+id/iv_humor_1"
+                    android:layout_alignLeft="@+id/iv_humor_1"
+                    android:layout_alignRight="@+id/iv_humor_1"
+                    android:layout_margin="2dp"
+                    android:background="#80333333"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/btn_home_collect_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/icon_praise" />
+
+                    <TextView
+                        android:id="@+id/tv_home_collectnum_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/btn_home_collect_1"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_home_comment_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="10dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/btn_home_comment_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_home_comment_1"
+                        android:src="@drawable/icon_comment" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_humor_2"
+                    android:layout_width="@dimen/index_img_height"
+                    android:layout_height="@dimen/index_img_height"
+                    android:layout_alignTop="@id/iv_humor_1"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_baoluo_pic"
+                    android:padding="@dimen/index_img_border_width"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bitboy" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_home_image_bottom_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignBottom="@+id/iv_humor_2"
+                    android:layout_alignLeft="@+id/iv_humor_2"
+                    android:layout_alignRight="@+id/iv_humor_2"
+                    android:layout_margin="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#80333333"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/btn_home_collect_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/icon_praise" />
+
+                    <TextView
+                        android:id="@+id/tv_home_collectnum_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/btn_home_collect_2"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_home_comment_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="10dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/btn_home_comment_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_home_comment_2"
+                        android:src="@drawable/icon_comment" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_humor_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/index_img_height"
+                    android:layout_alignLeft="@id/iv_humor_1"
+                    android:layout_below="@id/iv_humor_1"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_baoluo_pic"
+                    android:padding="@dimen/index_img_border_width"
+                    android:scaleType="fitXY" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_home_image_bottom_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignBottom="@+id/iv_humor_3"
+                    android:layout_alignLeft="@+id/iv_humor_3"
+                    android:layout_alignRight="@+id/iv_humor_3"
+                    android:layout_margin="2dp"
+                    android:background="#80333333"
+                    android:padding="5dp" >
+
+                    <ImageView
+                        android:id="@+id/btn_home_collect_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_praise" />
+
+                    <TextView
+                        android:id="@+id/tv_home_collectnum_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/btn_home_collect_3"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_home_comment_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="10dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/btn_home_comment_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/tv_home_comment_3"
+                        android:src="@drawable/icon_comment" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_humore_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/iv_humor_3"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_humor_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更多"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/index_more_font_size" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/tv_humor_more"
+                        android:layout_alignTop="@id/tv_humor_more"
+                        android:layout_marginLeft="3dp"
+                        android:layout_toRightOf="@id/tv_humor_more"
+                        android:src="@drawable/icon_index_more" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v_fenge_event"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@id/rl_humor"
+                android:background="#f7f5f5" />
+
+            <RelativeLayout
+                android:id="@+id/rl_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_fenge_event"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_baoluo_pics" >
+
+                <TextView
+                    android:id="@+id/tv_activity_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="公开活动"
+                    android:textColor="#505050"
+                    android:textSize="@dimen/index_channel_font_size" />
+
+                <ImageView
+                    android:id="@+id/iv_activity_1"
+                    android:layout_width="@dimen/index_img_height"
+                    android:layout_height="@dimen/index_img_height"
+                    android:layout_below="@id/tv_activity_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_baoluo_pic"
+                    android:padding="@dimen/index_img_border_width"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bitboy" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_event_image_blur_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignBottom="@+id/iv_activity_1"
+                    android:layout_alignLeft="@+id/iv_activity_1"
+                    android:layout_alignRight="@+id/iv_activity_1"
+                    android:layout_margin="2dp"
+                    android:background="#80333333"
+                    android:padding="5dp" >
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_activity_2"
+                    android:layout_width="@dimen/index_img_height"
+                    android:layout_height="@dimen/index_img_height"
+                    android:layout_alignTop="@id/iv_activity_1"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_baoluo_pic"
+                    android:padding="@dimen/index_img_border_width"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bitboy" />
+
+                <ImageView
+                    android:id="@+id/iv_activity_3"
+                    android:layout_width="321dp"
+                    android:layout_height="@dimen/index_img_height"
+                    android:layout_alignLeft="@id/iv_activity_1"
+                    android:layout_below="@id/iv_activity_1"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/bg_baoluo_pic"
+                    android:padding="@dimen/index_img_border_width"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_activity_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rl_activity"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_activity_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/index_more_font_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_activity_more"
+                    android:layout_alignTop="@id/tv_activity_more"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/tv_activity_more"
+                    android:src="@drawable/icon_index_more" />
+            </RelativeLayout>
+
+             <View
+                android:id="@+id/v_fenge_topic"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@id/rl_activity_more"
+                android:background="#f7f5f5"/> 
+
+            <RelativeLayout
+                android:id="@+id/rl_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_fenge_topic"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tv_topic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="热门话题"
+                    android:textColor="#505050"
+                    android:textSize="@dimen/index_channel_font_size" />
+
+                <ImageView
+                    android:id="@+id/iv_topic_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_topic_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/tv_topic_title"
+                    android:src="@drawable/icon_index_more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_topics"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@id/rl_topic"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

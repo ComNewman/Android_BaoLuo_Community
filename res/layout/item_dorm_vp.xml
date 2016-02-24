@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_dorm_top"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_dorm_list_pic"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <com.baoluo.community.ui.customview.RoundImageView
+            android:id="@+id/rv_dorm_avatar"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/iv_dorm_list_pic"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/bitboy" />
+
+        <TextView
+            android:id="@+id/tv_dorm_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:layout_alignBottom="@+id/rv_dorm_avatar"
+            android:layout_alignTop="@+id/rv_dorm_avatar"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/rv_dorm_avatar"
+            android:gravity="center_vertical"
+            android:text="newBoy"
+            android:textColor="#2B9AC5"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_dorm_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rv_dorm_avatar"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/rv_dorm_avatar"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center_vertical"
+            android:text="剩余时间20小时"
+            android:textColor="#333333"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_dorm_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingBottom="12dp"
+            android:layout_alignLeft="@+id/rv_dorm_avatar"
+            android:layout_alignRight="@+id/tv_dorm_time"
+            android:layout_below="@+id/rv_dorm_avatar"
+            android:layout_marginTop="12dp"
+            android:text="newBoyhgojhgoehngonjnjgeuhgn hgeghoeh hguehug "
+            android:textColor="#333333"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dorm_attend"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/rl_dorm_top" >
+         <com.baoluo.community.ui.customview.ThumbnailGridView
+                android:id="@+id/gv_dorm_item_attenduser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login" >
+    
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_login_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        lls:right_name="@string/head_register"
+        lls:right_show_icon="false"
+        lls:title_value="@string/head_login" />
+
+    <RelativeLayout
+        android:id="@+id/rl_login_account"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_below="@+id/hv_login_head"
+        android:background="@color/transparent" >
+
+        <EditText
+            android:id="@+id/et_login_account"
+            style="@style/text_humor_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@color/transparent"
+            android:gravity="bottom"
+            android:hint="@string/login_account"
+            android:inputType="phone" />
+        
+        <View 
+            android:id="@+id/view_fenge_account"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/et_login_account"
+            android:layout_alignRight="@+id/et_login_account"
+            android:background="@color/title_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"/>
+    </RelativeLayout>
+	 <RelativeLayout
+        android:id="@+id/rl_login_psd"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@+id/rl_login_account"
+        android:background="@color/transparent" >
+
+        <EditText
+            android:id="@+id/et_login_psd"
+            style="@style/text_humor_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@color/transparent"
+            android:gravity="bottom"
+            android:hint="@string/login_psd"
+            android:inputType="textPassword" />
+        
+        <View 
+            android:id="@+id/view_fenge_psd"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/et_login_psd"
+            android:layout_alignRight="@+id/et_login_psd"
+            android:background="@color/title_color"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"/>
+    </RelativeLayout>
+	 
+	 <Button
+            android:id="@+id/btn_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_below="@+id/rl_login_psd"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_login"
+            android:gravity="center"
+            android:text="@string/head_login"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+	 
+	 <Button 
+	     android:id="@+id/btn_login_find_psd"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignLeft="@+id/btn_login_login"
+	     android:layout_below="@+id/btn_login_login"
+	     android:layout_marginTop="20dp"
+	     android:text="@string/login_forget_psd"
+	     android:background="@color/transparent"
+	     android:textColor="@color/filter_default_color"
+	     android:textSize="14sp"/>
+
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_login.xml -->

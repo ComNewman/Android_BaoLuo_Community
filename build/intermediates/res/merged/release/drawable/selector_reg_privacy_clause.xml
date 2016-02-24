@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bg_reg_privacy_clause_seleted" android:state_checked="true"/>
+	<item android:drawable="@drawable/bg_reg_privacy_clause_defult" android:state_checked="false"/>
+	<item android:drawable="@drawable/bg_reg_privacy_clause_defult"/>
+</selector><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/drawable/selector_reg_privacy_clause.xml -->

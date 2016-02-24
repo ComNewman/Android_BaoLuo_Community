@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/head_title">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back"
+            android:paddingLeft="10dp"/>
+        <TextView 
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_top_bottom_margin"
+            android:layout_marginBottom="@dimen/title_top_bottom_margin"
+            android:layout_centerInParent="true"
+            android:textColor="@color/head_title_text"
+            android:textSize="@dimen/head_title_text_size"
+            android:text="@string/head_create_place"/>
+    </RelativeLayout>
+    
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/mv_amap"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/rl_title"/>
+    <RelativeLayout 
+        android:id="@+id/rl_center_location"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignBottom="@id/mv_amap">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_activity_add_img"/>
+    </RelativeLayout>
+    
+    <EditText 
+        android:id="@+id/et_place"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl_center_location"
+        android:hint="请输入位置名称"/>
+    
+    <Button 
+        android:id="@+id/btn_sure"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_place"
+        android:layout_marginTop="15dp"
+        android:text="确认"/>
+
+</RelativeLayout>

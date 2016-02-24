@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_chat"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:right_icon="@drawable/ic_geren_setting"/>
+
+    <com.baoluo.community.ui.customview.ImInputView
+        android:id="@+id/input_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <ProgressBar
+        android:id="@+id/pb_load_more"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/hv_head"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_msg_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/input_box"
+        android:layout_below="@id/pb_load_more"
+        android:background="#FFFFFFFF"
+        android:cacheColorHint="@null"
+        android:dividerHeight="10dp"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="alwaysScroll"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <com.baoluo.community.ui.customview.SpeekView
+        android:id="@+id/view_speek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_bg_tranblak"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone"/>
+
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/im_aty_chat.xml -->

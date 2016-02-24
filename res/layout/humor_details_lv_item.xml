@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <com.baoluo.community.ui.customview.RoundImageView
+        android:id="@+id/img_lv_head"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_margin="10dp"
+        android:focusable="false"
+        android:src="@drawable/head_default" />
+
+    <TextView
+        android:id="@+id/tv_lv_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/img_lv_head"
+        android:layout_toRightOf="@+id/img_lv_head"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="test"
+        android:textColor="#333333"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_lv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/tv_lv_nick"
+        android:layout_marginRight="10dp"
+        android:text="1小时前"
+        android:scrollbars="none"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_lv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignLeft="@+id/tv_lv_nick"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:layout_below="@+id/tv_lv_nick"
+        android:text="commentDetails\ncommentDetails\ncommentDetails"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+    <View 
+        android:id="@+id/view_fenge"
+        android:background="#dbdbdb"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        />
+
+</RelativeLayout>

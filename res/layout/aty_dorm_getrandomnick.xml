@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white" >
+
+        <com.baoluo.community.ui.customview.RoundImageView
+            android:id="@+id/riv_get_random_nick"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/head_test" />
+
+        <TextView
+            android:id="@+id/tv_get_random_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/riv_get_random_nick"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="魔鬼的步伐"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+        <Button 
+            android:id="@+id/btn_dorm_random_nick_sure"
+            android:layout_below="@+id/tv_get_random_nick_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_dorm_random_nick_sure"/>
+
+        <ImageButton
+            android:id="@+id/ib_get_random_nick_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_get_random_nick_name"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/tv_get_random_nick_name"
+            android:background="@color/transparent"
+            android:paddingTop="10dp"
+            android:src="@drawable/btn_get_random_nick_refresh" />
+
+        <TextView
+            android:id="@+id/tv_get_random_nick_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_dorm_random_nick_sure"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="既然吐槽，还是别公开身份了，有效期一天。"
+            android:textColor="#999999"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

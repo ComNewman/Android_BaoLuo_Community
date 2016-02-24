@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_humor_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_humor_details_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <com.baoluo.community.ui.customview.RoundImageView
+            android:id="@+id/iv_humor_details_avatar"
+            android:layout_width="@dimen/humor_list_avatar"
+            android:layout_height="@dimen/humor_list_avatar"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/head_default"
+            lls:border_inside_color="#fffff1"
+            lls:border_thickness="2dp" />
+
+        <TextView
+            android:id="@+id/tv_humor_details_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_humor_details_avatar"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/iv_humor_details_avatar"
+            android:text=""
+            android:textColor="@color/humor_item_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_humor_details_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_humor_details_user"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="2015-06-16"
+            android:textColor="@color/humor_item_text"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/img_humor_details_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_humor_details_user"
+            android:layout_below="@+id/tv_humor_details_user"
+            android:layout_marginTop="6dp"
+            android:paddingBottom="6dp"
+            android:src="@drawable/location_icon" />
+
+        <TextView
+            android:id="@+id/tv_humor_details_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_humor_details_location"
+            android:layout_alignTop="@+id/img_humor_details_location"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/img_humor_details_location"
+            android:gravity="center_vertical"
+            android:textColor="@color/humor_item_text"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_humor_img"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/iv_humor_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_humor_details_voice_playing"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@anim/voice_frame"
+            android:padding="10dp"
+            android:visibility="gone" />
+
+        <com.baoluo.community.ui.customview.TagShowImage
+            android:id="@+id/tsi_tags"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/iv_humor_details" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_humor_details_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/tv_humor_details_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_humor_details_praise_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_humor_details_content"
+            android:layout_below="@+id/tv_humor_details_content"
+            android:paddingBottom="6dp" >
+
+            <TextView
+                android:id="@+id/tv_humor_details_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/selector_like"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="4dp"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_humor_details_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tv_humor_details_praise"
+                android:drawableLeft="@drawable/ic_htxq_pl_nor"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="4dp"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/ib_humor_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/transparent"
+                android:padding="10dp"
+                android:src="@drawable/ic_xqlb_fx_nor" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_humor_details_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rl_humor_details_praise_comment"
+            android:layout_alignLeft="@+id/rl_humor_details_praise_comment"
+            android:paddingBottom="10dp"
+            android:paddingLeft="6dp"
+            android:src="@drawable/ic_select"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#dbdbdb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.baoluo.community.ui.customview.ListViewForScrollView
+            android:id="@+id/xlv_humor_comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:transcriptMode="alwaysScroll" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/act_scroll_view.xml -->

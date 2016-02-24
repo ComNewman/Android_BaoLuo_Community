@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_notification_add" android:state_selected="true"/>
+    <item android:drawable="@drawable/btn_inputbox_send"/>
+
+</selector><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/drawable/btn_inputboxz_add_send.xml -->

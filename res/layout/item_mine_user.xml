@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="3dp" >
+
+    <com.baoluo.community.ui.customview.RoundImageView
+        android:id="@+id/rv_avatar"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/head_default" >
+    </com.baoluo.community.ui.customview.RoundImageView>
+
+</LinearLayout>

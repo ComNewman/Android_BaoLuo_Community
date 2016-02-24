@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dorm_item_split"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_dorm_img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#26292E" >
+
+        <ImageView
+            android:id="@+id/iv_dorm_item_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_humor_test" />
+
+        <RelativeLayout
+            android:id="@+id/ll_head_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp" >
+
+            <com.baoluo.community.ui.customview.RoundImageView
+                android:id="@+id/iv_dorm_item_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/head_test"
+                android:divider="@color/head_title"
+                android:dividerHeight="0dip" />
+
+            <TextView
+                android:id="@+id/tv_dorm_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_dorm_item_avatar"
+                android:text="黄月英"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_dorm_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="剩余23小时"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dorm_dsc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp" >
+
+        <ImageView
+            android:id="@+id/img_dorm_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_dorm_bottom" />
+
+        <TextView
+            android:id="@+id/tv_dorm_dsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="这是什么鬼？什么鬼？"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

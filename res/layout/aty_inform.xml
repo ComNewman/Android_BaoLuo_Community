@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_inform_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:right_icon="@drawable/ic_create"
+        lls:title_value="@string/head_inform" />
+
+    <LinearLayout
+        android:id="@+id/ll_inform_reason"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ebebeb"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_reason_inform"
+            style="@style/text_15_333"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:gravity="bottom"
+            android:text="@string/inform_reason" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_fenge"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:background="@color/title_color" />
+
+    <ListView
+        android:id="@+id/lv_inform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_inform_reason_edit"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_inform_reason_other"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ebebeb"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_reason_inform_other"
+                style="@style/text_15_333"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="14dp"
+                android:gravity="bottom"
+                android:text="@string/inform_reason_other" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_inform_other"
+            style="@style/text_humor_send"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="14dp"
+            android:background="@color/transparent"
+            android:hint="输入其他原因" />
+    </LinearLayout>
+
+</LinearLayout>

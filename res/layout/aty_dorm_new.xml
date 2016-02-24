@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#353535" >
+
+    <RelativeLayout
+        android:id="@+id/rl_dorm_list_nomal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_dorm_title"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/ll_dorm_list_select"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/dorm_create_title"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_dorm_list_single"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_dorm_list_single"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="单聊"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/dorm_list_flag_single"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignBottom="@+id/btn_dorm_list_single"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="#2b9ac5"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_dorm_list_group"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_dorm_list_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="群聊"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/dorm_list_flag_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignBottom="@+id/btn_dorm_list_group"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="#2b9ac5"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ib_dorm_list_up"
+            android:layout_below="@+id/ll_dorm_list_select" />
+
+        <ImageButton
+            android:id="@+id/ib_dorm_list_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ib_dorm_list_up" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_dorm_list_queue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_dorm_title"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/lv_dorm_list_queue"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:layout_marginTop="4dp" />
+
+        <ImageButton
+            android:id="@+id/ib_dorm_list_down"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:paddingBottom="14dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/ib_dorm_list_down" />
+
+        <LinearLayout
+            android:id="@+id/ll_dorm_list_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@drawable/bg_dorm_list_out"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_dorm_list_back_dorm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="回到宿舍"
+                android:background="@color/transparent"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+			<TextView 
+			    android:id="@+id/tv_dorm_list_buttom_line"
+			    android:layout_width="1dp"
+			    android:background="#3e3d3d"
+			    android:layout_marginTop="8dp"
+			    android:layout_marginBottom="8dp"
+			    android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btn_dorm_list_out"
+                android:layout_width="0dp"
+                android:background="@color/transparent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="退出奇葩宿舍"
+                android:textColor="#d37171"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dorm_title"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/dorm_create_title" >
+
+        <ImageButton
+            android:id="@+id/btn_dorm_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:paddingLeft="20dp"
+            android:src="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/tv_dorm_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/title_top_bottom_margin"
+            android:layout_marginTop="@dimen/title_top_bottom_margin"
+            android:text="@string/head_dorm_list_title"
+            android:textColor="@color/head_title_text"
+            android:textSize="@dimen/head_title_text_size" />
+
+        <ImageButton
+            android:id="@+id/btn_dorm_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            android:paddingRight="20dp"
+            android:src="@drawable/btn_dorm_publish" />
+    </RelativeLayout>
+
+</RelativeLayout>

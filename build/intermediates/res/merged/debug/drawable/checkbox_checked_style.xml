@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/checkbox_selected" android:state_checked="true"></item>
+    <!-- 
+    <item android:drawable="@drawable/checkbox_default" android:state_checked="false"></item>
+	 -->
+</selector><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/drawable/checkbox_checked_style.xml -->

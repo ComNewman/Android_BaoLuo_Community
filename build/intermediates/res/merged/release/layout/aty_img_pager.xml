@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.baoluo.community.ui.customview.HackyViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"/>
+    <TextView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:text="@string/viewpager_indicator"
+        android:background="@drawable/bg_img_view"/>
+       <!-- "@string/viewpager_indicator" -->
+       <View 
+           android:id="@+id/vv"
+           android:layout_width="1dp"
+           android:layout_height="1dp"
+           android:visibility="invisible"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="18dp"/>
+    <Button 
+        android:id="@+id/btn_nature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/vv"
+        android:layout_alignBottom="@id/vv"
+        android:background="@drawable/bg_img_view"
+        android:layout_marginRight="8dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="原图"/>
+    <Button 
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/vv"
+        android:layout_alignBottom="@id/vv"
+        android:background="@drawable/bg_img_view"
+        android:layout_marginLeft="8dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="保存"/>
+    
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_img_pager.xml -->

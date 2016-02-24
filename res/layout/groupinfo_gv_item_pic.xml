@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="80dp" >
+
+        <ImageView
+            android:id="@+id/group_menber_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/btn_topic_create_add_pic" />
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp" >
+
+            <ImageButton
+                android:id="@+id/groupinfo_delete_menber"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/img_groupingo_delete_menber"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/group_menber_nick"
+            android:layout_below="@+id/group_menber_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/group_menber_head"
+            android:layout_alignRight="@+id/group_menber_head"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textSize="10sp"
+            android:textColor="#333333"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="西门吹雪" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_humor_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F5F6" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:alpha="0.7"
+        lls:head_color="@color/white"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:title_value="@string/head_humor_detail_title" />
+
+    <com.baoluo.community.ui.xscrollview.XScrollView
+        android:id="@+id/rrrrrrr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/siv_humor_details"
+        android:layout_below="@+id/hv_head" >
+    </com.baoluo.community.ui.xscrollview.XScrollView>
+
+    <com.baoluo.community.ui.customview.SmInputView 
+        android:id="@+id/siv_humor_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView 
+        android:id="@+id/iv_avatar"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/default_head"/>
+
+</LinearLayout>
+<!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/item_add_user_sel.xml -->

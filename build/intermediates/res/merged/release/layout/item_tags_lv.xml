@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/listview_item_pressed_style" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/text_setting_main"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        />
+
+    <CheckBox
+        android:id="@+id/cbCheckBox"
+        android:layout_width="46dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:button="@drawable/checkbox_checked_style"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <View
+        android:id="@+id/view_fenge_tags"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dip"
+        android:layout_alignBottom="@+id/tvTitle"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_alignParentRight="true"
+        android:background="#D3D3D3" />
+
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/item_tags_lv.xml -->

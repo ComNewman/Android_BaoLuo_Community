@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_imgs"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <ImageView
+        android:id="@+id/iv_event_bg"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_htxq_jianbiankuang" />
+
+    <RelativeLayout
+        android:id="@+id/ll_event_details_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vp_imgs"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <com.baoluo.community.ui.customview.RoundImageView
+            android:id="@+id/iv_event_details_avatar"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/head_default"
+            lls:border_inside_color="#fffff1"
+            lls:border_thickness="2dp" />
+
+        <TextView
+            android:id="@+id/tv_event_details_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/iv_event_details_avatar"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_event_details_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_event_details_classify"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/vp_imgs"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_event_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/event_detail"
+            android:textColor="@drawable/selector_color_event_classify"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="#e2e2e2" />
+
+        <Button
+            android:id="@+id/btn_event_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/event_detail_comment"
+            android:textColor="@drawable/selector_color_event_classify"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_fenge"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/ll_event_details_classify"
+        android:background="#e2e2e2" />
+
+    <RelativeLayout
+        android:id="@+id/rl_event_details_details"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/view_fenge"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/rl_event_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:id="@+id/tv_event_details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxEms="12"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_event_details_enroll"
+                android:layout_width="58dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_event_attention"
+                android:text="+ 关注"
+                android:textColor="@color/bg_event_attention"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_event_details_attention"
+                android:layout_width="58dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/btn_event_details_enroll"
+                android:background="@drawable/bg_topic_hight_repay"
+                android:text="报名"
+                android:textColor="@color/bg_topic_hight_relpay"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_event_details_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_event_details_title"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btn_event_details_time"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/ic_didian_nor"
+            android:text="@string/event_detail_location"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_event_details_peoplenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_event_details_title"
+            android:layout_below="@+id/rl_event_details_title"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/ic_renshu_nor"
+            android:text="@string/event_detail_people_num"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_event_details_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_event_details_title"
+            android:layout_below="@+id/btn_event_details_peoplenum"
+            android:layout_marginTop="10dp"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/ic_shijian_nor"
+            android:text="@string/event_detail_time"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_event_details_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/rl_event_details_title"
+            android:layout_alignRight="@+id/rl_event_details_title"
+            android:layout_below="@+id/btn_event_details_location"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_event_details_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/view_fenge"
+        android:visibility="gone" >
+
+        <com.baoluo.community.ui.customview.ListViewForScrollView
+            android:id="@+id/lv_event_details_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+    </RelativeLayout>
+
+</RelativeLayout>

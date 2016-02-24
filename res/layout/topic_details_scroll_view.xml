@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_topic_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7F5F5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_topic_details_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/img_topic_details_head"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/head_test" />
+
+        <TextView
+            android:id="@+id/tv_topic_details_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_topic_details_head"
+            android:text="昵称"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_topic_details_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_topic_details_reply"
+            android:padding="8dp"
+            android:text="高逼格回复"
+            android:textColor="#F8FBFF" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_topic_details_name_time"
+        android:layout_below="@+id/rl_topic_details_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_topic_details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="电影爱好者"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_topic_details_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="五分钟前"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_topic_details_content"
+        android:layout_below="@+id/rl_topic_details_name_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="5dp"
+        android:text="topic content test!"
+        android:textColor="#666666"
+        android:textSize="13sp" />
+
+    <com.baoluo.community.ui.customview.ThumbnailGridView
+        android:id="@+id/tgv_topic_details"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_below="@+id/tv_topic_details_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_topic_details_comment_classify"
+        android:layout_below="@+id/tgv_topic_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_topic_details_comment_wonderful"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_topic_details_comment_wonderful"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="精彩评论"
+                android:textColor="@drawable/topic_comment_text_color"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_topic_details_comment_wonderful"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/img_topic_details_yellow"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_topic_details_comment_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_topic_details_comment_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="最新评论"
+                android:textColor="@drawable/topic_comment_text_color"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_topic_details_comment_new"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/img_topic_details_yellow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.baoluo.community.ui.customview.ListViewForScrollView
+        android:id="@+id/xlv_topic_detials"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_topic_details_comment_classify"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="18dp" />
+
+    
+
+</RelativeLayout>

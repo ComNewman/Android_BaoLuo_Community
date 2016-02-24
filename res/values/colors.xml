@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <drawable name="tweet_color">#FF000000</drawable>
+    <drawable name="tweet_meta_color">#FF999999</drawable>
+	
+    <color name="tags_color">#f39633</color>
+    <color name="tags_color_se">#ff6c00</color>
+    <color name="white">#ffffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ffccddff</color>
+    <color name="grey">#ff808080</color>
+    <color name="green">#00ff00</color>
+    <color name="pls_talk_normal">#ff707277</color>
+    <color name="search_hint">#ffcccccc</color>
+    <color name="transparent">#00000000</color>
+	<color name="setting_title">#4E96DF</color>
+    <drawable name="testd">#00ff00</drawable>
+ <!-- 分割线 -->
+    <color name="testc">#BDBAB5</color>
+    <color name="title_color">#333333</color>
+    <color name="filter_default_color">#666666</color>
+	<color name="humor_filtrate_color_defult">#999999</color>
+    <color name="menu_bg_normal">#2B2E33</color>
+    <color name="menu_bg_selected">#22252A</color>
+    <color name="main_btn_normal">#626973</color>
+    <color name="main_btn_selected">#464B52</color>
+    <color name="part_line_color">#2C2F34</color>
+ <!-- 分割线 -->
+    <color name="humor_item_text">#5c5a5f</color>
+    <color name="background">#1D2025</color>
+    <color name="humor_content">#60000000</color>
+    <color name="head_title">#26292E</color>
+    <color name="dorm_create_title">#06222d</color>
+    <color name="head_title_text">#ffffff</color>
+    <color name="content_bg_color">#26292E</color>
+    <color name="filter_press_color">#FFFFFD</color>
+    <color name="range_sel">#F2F2F2</color>
+    <color name="send_activity_color">#50C7DF</color>
+    <color name="index_channel_font_color">#E9EFF8</color>
+    <color name="index_user_name_fot_color">#858B96</color>
+    <color name="index_more_font_color">#B0B3BA</color>
+    <color name="bg_send_color">#EDEDED</color>
+    <color name="send_divider_color">#EEEEEE</color>
+    <color name="send_text_color">#5C5C5C</color>
+    <color name="send_text_color_tint">#BDBDBD</color>
+    <color name="send_dash_border_color">#474747</color>
+    <color name="send_tag_color">#BEBEBE</color>
+    <color name="tag_blue">#0AC0FF</color>
+    <color name="tag_green">#6bf602</color>
+    <color name="tag_purple">#ed4cee</color>
+    <color name="send_tag_bg_color">#F7F7F7</color>
+	<color name="tags_nomal">#B5B4B4</color>
+	<color name="tags_selected">#959191</color>
+	<color name="humor_filtrate_color_lostFocus">#dadada</color>
+	
+	<color name="topic_lv">#fab00f</color>
+	<color name="topic_nan">#1975ff</color>
+	<color name="topic_nv">#ff0909</color>
+	<color name="bg_topic_hight_relpay">#37f5d6</color>
+	<color name="bg_event_attention">#ff7f7f</color>
+	<color name="bg_dorm_get_nick_man">#3bb1d8</color>
+	<color name="bg_dorm_get_nick_girl">#ec64b4</color>
+	<color name="bg_fenge">#dbdbdb</color>
+	<color name="bg_bl_text_select">#ff7f7f</color>
+	<color name="bg_bl_text_unselect">#ffcaca</color>
+	
+	<color name="bg_bl_text_nan_select">#5d99ff</color>
+	<color name="bg_bl_text_nan_unselect">#c4d9fd</color>
+    <!-- 注册登录 -->
+    <color name="login_blue_color">#099EE0</color>
+    <color name="dividing_line_color">#E7E7E7</color>
+    <color name="hui_se_font_color">#656565</color>
+
+    <!-- zxing -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <!-- other -->
+    <color name="white_border">#CECECE</color>
+    <color name="list_select">#C6C6C6</color>
+
+</resources>

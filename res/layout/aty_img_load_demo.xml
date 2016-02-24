@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/btn_insert_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择图片"/>
+    
+<com.baoluo.community.ui.customview.ThumbnailGridView
+   android:id="@+id/quick_gridView"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_below="@id/btn_insert_img"
+   android:layout_marginLeft="10dp"
+   android:layout_marginRight="10dp"
+   android:layout_marginTop="5dp"
+   android:horizontalSpacing="5dp"
+   android:verticalSpacing="5dp"
+   android:listSelector="@color/transparent"
+   android:numColumns="4"
+   android:scrollbars="none" />
+
+<Button 
+    android:id="@+id/btn_img_load"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/quick_gridView"
+    android:text="上传图片"/>
+
+<TextView 
+    android:id="@+id/tv_load_status"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/btn_img_load"/>
+    
+
+</RelativeLayout>

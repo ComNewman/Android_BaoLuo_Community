@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff0f4" >
+
+    <RelativeLayout
+        android:id="@+id/rl_fri_info_top"
+        android:layout_width="match_parent"
+        android:layout_height="268dp" >
+
+        <ImageView
+            android:id="@+id/iv_fri_info_top_bac"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_jianbian_nor"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_no_pic"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_jianbian_nor" />
+
+        <com.baoluo.community.ui.customview.RoundImageView
+            android:id="@+id/riv_fri_info_head"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="86dp"
+            android:src="@drawable/head_default"
+            lls:border_inside_color="#fffff1"
+            lls:border_thickness="2dp" />
+
+        <ImageView
+            android:id="@+id/iv_fri_info_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/riv_fri_info_head"
+            android:layout_alignRight="@+id/riv_fri_info_head"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_nv" />
+
+        <TextView
+            android:id="@+id/tv_fri_info_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/riv_fri_info_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="用户昵称"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_fri_info_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fri_info_nick"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="账号：宝落用户名"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_fri_info_jifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fri_info_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="累计总积分  87654321"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fri_info_area"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/rl_fri_info_top"
+        android:background="@drawable/bg_white_circular" >
+
+        <TextView
+            android:id="@+id/tv_fri_info_area"
+            style="@style/text_setting_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:text="地区" />
+
+        <TextView
+            android:id="@+id/tv_fri_info_area_right_flag"
+            style="@style/text_setting_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="广东省 深圳市" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_fenge"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dip"
+        android:layout_below="@+id/rl_fri_info_area"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="#BEBEBE" />
+
+    <LinearLayout
+        android:id="@+id/ll_fri_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_fenge"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_fri_photo"
+            style="@style/text_big"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:text="个人相册" />
+
+        <LinearLayout
+            android:id="@+id/ll_fri_photo_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="14dp" >
+
+            <ImageView
+                android:id="@+id/iv_fri_photo1"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/bg_no_pic" />
+
+            <ImageView
+                android:id="@+id/iv_fri_photo2"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/bg_no_pic" />
+
+            <ImageView
+                android:id="@+id/iv_fri_photo3"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/bg_no_pic" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_fri_info_send_msg"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_fri_info_add_fri"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/bg_fri_send_msg"
+        android:gravity="center"
+        android:text="发送信息"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_fri_info_add_fri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/bg_fri_add"
+        android:text="添加好友"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_fri_info_attention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/bg_fri_attend"
+        android:gravity="center"
+        android:text="关注"
+        android:textColor="#1ABA30"
+        android:textSize="15sp" />
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_fri_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        />
+
+</RelativeLayout>

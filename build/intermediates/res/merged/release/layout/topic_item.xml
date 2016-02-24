@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="10dp" >
+
+    <TextView
+        android:id="@+id/tv_topic_item_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="吃货集中营"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_topic_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_topic_item_nick"
+        android:text="now"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_topic_item_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_topic_item_nick"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <com.baoluo.community.ui.customview.ThumbnailGridView
+        android:id="@+id/gv_topic_item_pics"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_topic_item_tag"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_topic_item_praiseandcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gv_topic_item_pics"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/btn_topic_item_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_topic_item_commentnum"
+            android:background="@drawable/btn_topic_item_comment" />
+
+        <TextView
+            android:id="@+id/tv_topic_item_commentnum"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_topic_item_comment"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btn_topic_item_comment"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:text="3000"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_topic_item_collectnum"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_topic_item_comment"
+            android:layout_alignTop="@+id/btn_topic_item_comment"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btn_topic_item_comment"
+            android:gravity="center_vertical"
+            android:text="3000"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_topic_item_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_topic_item_collectnum"
+            android:background="@drawable/btn_topic_item_praise" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/topic_item.xml -->

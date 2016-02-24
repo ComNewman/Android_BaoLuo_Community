@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/siv_topic_details"
+        android:layout_alignParentTop="true" >
+
+        <com.baoluo.community.ui.xscrollview.XScrollView
+            android:id="@+id/sv_topic_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.baoluo.community.ui.xscrollview.XScrollView>
+    </RelativeLayout>
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_topic_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rl_scroll"
+        android:background="@color/white"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:title_value="话题详情" />
+    
+	<com.baoluo.community.ui.customview.SmInputView 
+	    android:id="@+id/siv_topic_details"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    />
+
+</RelativeLayout>

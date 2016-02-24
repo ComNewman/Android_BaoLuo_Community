@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white" >
+
+        <ImageButton
+            android:id="@+id/ib_group_code_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_fanhui_nor" />
+
+        <TextView
+            android:id="@+id/tv_group_code_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/ib_group_code_back"
+            android:text="聊天信息(3)"
+            android:textColor="@color/title_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_group_code__title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/title_top_bottom_margin"
+            android:layout_marginTop="@dimen/title_top_bottom_margin"
+            android:text="群二维码"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/head_title_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_group_code_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1c2027" >
+
+        <LinearLayout
+            android:id="@+id/ll_group_code_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_group_code__pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_group_code__head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/bg_group_code_head"
+                    android:src="@drawable/head_test" />
+
+                <TextView
+                    android:id="@+id/tv_group_code_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="群聊名称"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#323232"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_group_code_pic"
+                android:layout_width="207dp"
+                android:layout_height="207dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_group_code__save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" >
+
+                <Button
+                    android:id="@+id/btn_group_code_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_btn_save_code"
+                    android:padding="8dp"
+                    android:text="保存为图片"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_code_group.xml -->

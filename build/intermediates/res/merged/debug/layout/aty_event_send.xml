@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    android:orientation="vertical" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_event_send_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:right_icon="@drawable/ic_create"
+        lls:title_value="@string/head_activity_send_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_event_send_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            tools:ignore="UselessParent" >
+
+            <ImageView
+                android:id="@+id/iv_event_send_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/ic_event_send_title"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/et_event_send_title"
+                style="@style/text_humor_send"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="14dp"
+                android:layout_toRightOf="@+id/iv_event_send_title"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/event_send_title_hint"
+                android:maxLength="12" />
+
+            <View
+                android:id="@+id/view_fenge"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dip"
+                android:layout_alignBottom="@+id/et_event_send_title"
+                android:layout_alignLeft="@+id/iv_event_send_title"
+                android:layout_alignRight="@+id/et_event_send_title"
+                android:background="#D3D3D3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_event_send_describe"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            tools:ignore="UselessParent" >
+
+            <ImageView
+                android:id="@+id/iv_event_send_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/ic_event_send_dsc"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/et_event_send_describe"
+                style="@style/text_humor_send"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/iv_event_pic"
+                android:layout_toRightOf="@+id/iv_event_send_describe"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/event_send_desc_hint" />
+
+            <ImageView
+                android:id="@+id/iv_event_pic"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/bg_no_pic"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/view_fenge_describe"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dip"
+                android:layout_alignBottom="@+id/et_event_send_describe"
+                android:background="#D3D3D3" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_event_send_location"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            tools:ignore="UselessParent" >
+
+            <ImageView
+                android:id="@+id/iv_event_send_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/ic_event_send_location"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/et_event_send_location"
+                style="@style/text_humor_send"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="14dp"
+                android:layout_toLeftOf="@+id/iv_event_location"
+                android:layout_toRightOf="@+id/iv_event_send_location"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/event_send_location_hint" />
+
+            <ImageView
+                android:id="@+id/iv_event_location"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/ic_event_send_map"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/view_fenge_location"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dip"
+                android:layout_alignBottom="@+id/et_event_send_location"
+                android:layout_alignLeft="@+id/iv_event_send_location"
+                android:layout_alignRight="@+id/iv_event_location"
+                android:background="#D3D3D3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_event_send_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            tools:ignore="UselessParent" >
+
+            <ImageView
+                android:id="@+id/iv_event_send_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/ic_event_send_time"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/et_event_send_time"
+                style="@style/text_humor_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="14dp"
+                android:layout_toRightOf="@+id/iv_event_send_time"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/event_send_time_hint"
+                />
+			<TextView 
+                android:id="@+id/tv_event_send_start_time"
+                style="@style/text_humor_send"
+                android:layout_toRightOf="@+id/et_event_send_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="@string/event_send_start"/>
+            <TextView
+                android:id="@+id/tv_fenge"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@id/tv_event_send_start_time"
+                android:text="@string/event_send_fenge"
+                />
+            <TextView 
+                android:id="@+id/tv_event_send_end_time"
+                style="@style/text_humor_send"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_fenge"
+                android:singleLine="true"
+                android:text="@string/event_send_end"/>
+            <View
+                android:id="@+id/view_fenge_time"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dip"
+                android:layout_marginRight="14dp"
+                android:layout_alignBottom="@+id/et_event_send_time"
+                android:layout_alignLeft="@+id/iv_event_send_time"
+                android:background="#D3D3D3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_event_send_peoplenum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            tools:ignore="UselessParent" >
+
+            <ImageView
+                android:id="@+id/iv_event_send_peoplenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/ic_event_send_peoplenum"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/et_event_send_peoplenum"
+                style="@style/text_humor_send"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="14dp"
+                android:layout_toRightOf="@+id/iv_event_send_peoplenum"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:hint="@string/event_send_peoplenum_hint"
+                android:inputType="number"
+                android:maxLength="3" />
+
+            <View
+                android:id="@+id/view_fenge_peoplenum"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dip"
+                android:layout_alignBottom="@+id/et_event_send_peoplenum"
+                android:layout_alignLeft="@+id/iv_event_send_peoplenum"
+                android:layout_alignRight="@+id/et_event_send_peoplenum"
+                android:background="#D3D3D3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_event_send_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent" >
+
+            <ImageView
+                android:id="@+id/iv_event_send_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/ic_event_send_tags"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/et_event_send_tags"
+                android:visibility="visible"
+                style="@style/text_humor_send"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="14dp"
+                android:layout_toRightOf="@+id/iv_event_send_tags"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/event_send_tags_hint"
+                 />
+			<com.baoluo.community.ui.customview.TagsView 
+			    android:id="@+id/tags_event_send"
+			    android:visibility="gone"
+			    android:layout_toRightOf="@+id/iv_event_send_tags"
+			    android:layout_marginRight="14dp"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"/>
+            <View
+                android:id="@+id/view_fenge_tags"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dip"
+                android:layout_alignBottom="@+id/et_event_send_tags"
+                android:background="#D3D3D3" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_event_send.xml -->

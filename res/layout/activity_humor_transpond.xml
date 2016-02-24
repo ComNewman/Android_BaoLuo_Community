@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_humor_transpond_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="#00000000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_transpond_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#00000000"
+            android:text="取消"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_transpond_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="转发心情"
+                android:gravity="center_horizontal"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_transpond_nick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_transpond_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#00000000"
+            android:text="发送"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#D6D4D0" />
+
+    <EditText
+        android:id="@+id/et_transpond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="说说分享心得..." />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_transpond"
+            android:layout_width="wrap_content"
+            android:layout_height="47dip"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_transpond_from"
+            android:layout_width="wrap_content"
+            android:layout_height="17dip"
+            android:layout_alignTop="@+id/img_transpond"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/img_transpond"
+            />
+
+        <TextView
+            android:id="@+id/tv_transpond_content"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_alignBottom="@+id/img_transpond"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/img_transpond"
+            android:ellipsize="end"
+            android:text="content" />
+    </RelativeLayout>
+
+</LinearLayout>

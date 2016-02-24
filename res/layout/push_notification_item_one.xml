@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA" >
+
+    <TextView
+        android:id="@+id/tv_notification_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_notification_time"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:text="2015年7月15号  12:25" />
+
+    <RelativeLayout
+        android:id="@+id/rl_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_notification_time"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_white_radius_border" >
+
+        <ImageView
+            android:id="@+id/iv_notification_first_pic"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:layout_margin="11dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_humor_test" />
+
+        <TextView
+            android:id="@+id/tv_notification_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_notification_first_pic"
+            android:layout_alignLeft="@+id/iv_notification_first_pic"
+            android:layout_alignRight="@+id/iv_notification_first_pic"
+            android:background="@drawable/bg_notification_title"
+            android:padding="5dp"
+            android:text="学校正在举行喝农药大赛"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_notification_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_notification_first_pic"
+            android:layout_alignRight="@+id/iv_notification_first_pic"
+            android:layout_below="@+id/iv_notification_first_pic"
+            android:maxLines="6"
+            android:ellipsize="end"
+            android:text="我不知道是探险家在装逼呢，还是出题老师在装。人类肆意破坏了整个地球，却强拉几只不会说话的蝴蝶来证明自己爱护环境。你看你看，我们发现洞里有蝴蝶 就退出山洞了，多么伟大、多么圣洁。我要是蝴蝶，我一定不会放过你们，我躲进亿万年没人到达的山洞，还是躲不开你们，我一定要改改我的食谱，先咬你们几口 再说。"
+            android:textColor="#333333" />
+
+        <LinearLayout
+            android:id="@+id/ll_notification_read_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_notification_first_pic"
+            android:layout_below="@+id/tv_notification_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingBottom="11dp" >
+
+            <Button
+                android:id="@+id/btn_read_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@color/transparent"
+                android:drawableRight="@drawable/btn_notification_arrows"
+                android:gravity="left"
+                android:text="阅读全文"
+                android:textColor="#323232"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/bg_norification_split" />
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_inputbox_voice_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/btn_inputbox_voice"
+            android:background="@color/transparent"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btn_inputbox_voice_keyboard_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/btn_inputbox_text"
+            android:background="@color/transparent"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_press_to_speak_1"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="9dp"
+            android:background="@drawable/bg_tv_speak"
+            android:gravity="center"
+            android:text="按住 说话"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_inputbox_1"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="9dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/bg_notification_edittext"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:visibility="visible"
+            tools:ignore="TextFields"
+            android:maxLines="5"/>
+
+        <ImageButton
+            android:id="@+id/btn_inputbox_face_keyboard_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/btn_inputbox_text"
+            android:background="@color/transparent"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_inputbox_face_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_notification_face"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btn_inputbox_send_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:src="@drawable/btn_inputbox_send"
+            android:background="@color/transparent"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btn_inputbox_add_1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:src="@drawable/btn_notification_add"
+            android:background="@color/transparent"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/face_inputbox_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:layout_gravity="center"
+            android:padding="10dip"/>
+        <LinearLayout
+            android:id="@+id/face_inputbox_dots_container"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/face_inputbox_classify"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            
+            <Button 
+                android:id="@+id/btn_default_face"
+                android:layout_width="0dp"
+                android:background="@color/transparent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/text_13_666"
+                android:gravity="center"
+                android:text="默认"/>
+            <Button 
+                android:id="@+id/btn_gif_face"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:layout_weight="1"
+                style="@style/text_13_666"
+                android:gravity="center"
+                android:text="动画"/>
+        </LinearLayout>
+    </LinearLayout>
+     <!-- 图片，表情，名片等按钮 -->
+
+        <LinearLayout
+            android:id="@+id/ll_btn_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:visibility="gone" >
+
+            <include layout="@layout/layout_chat_tool" />
+        </LinearLayout>
+</LinearLayout>

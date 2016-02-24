@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:title_value="活动详情"/>
+
+    <com.baoluo.community.ui.customview.Pull2RefreshListView
+        android:id="@+id/lv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hv_head"
+        android:layout_marginBottom="30dp">
+    </com.baoluo.community.ui.customview.Pull2RefreshListView>
+
+    <com.baoluo.community.ui.customview.SmInputView
+        android:id="@+id/siv_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_activity_detail.xml -->

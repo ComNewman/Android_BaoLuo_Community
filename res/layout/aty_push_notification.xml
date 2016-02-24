@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_notification_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/head_title" >
+
+        <ImageButton
+            android:id="@+id/btn_notification_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/title_top_bottom_margin"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/title_top_bottom_margin"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_notification_menu" />
+
+        <ImageButton
+            android:id="@+id/btn_notification_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/title_top_bottom_margin"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/title_top_bottom_margin"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_notification_back" />
+
+        <TextView
+            android:id="@+id/tv_notification_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/title_top_bottom_margin"
+            android:layout_marginTop="@dimen/title_top_bottom_margin"
+            android:text="@string/head_title_school_notification"
+            android:textColor="@color/head_title_text"
+            android:textSize="@dimen/head_title_text_size" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_notification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_notification_bottom"
+        android:layout_below="@+id/rl_notification_title" />
+    <!--
+    <ScrollView
+        android:id="@+id/sv_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_notification_bottom"
+        android:layout_below="@+id/rl_notification_title" >
+
+        <LinearLayout
+            android:id="@+id/ll_sv_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.baoluo.community.ui.customview.ListViewForScrollView
+                android:id="@+id/lv_notification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+        </LinearLayout>
+    </ScrollView>    -->
+
+    <RelativeLayout
+        android:id="@+id/rl_notification_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F5F5F5" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/bg_norification_split" />
+
+        <Button
+            android:id="@+id/btn_notification_swith"
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_notification_swith" />
+
+        <View
+            android:id="@+id/spilit"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/btn_notification_swith"
+            android:background="#CCCCCC" />
+
+        <Button
+            android:id="@+id/btn_notification_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/btn_notification_add" />
+
+        <Button
+            android:id="@+id/btn_notification_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_notification_add"
+            android:background="@drawable/btn_notification_face" />
+
+        <Button
+            android:id="@+id/btn_notification_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/spilit"
+            android:background="@drawable/btn_inputbox_voice" />
+
+        <EditText
+            android:id="@+id/et_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="9dp"
+            android:layout_toLeftOf="@+id/btn_notification_face"
+            android:layout_toRightOf="@+id/btn_notification_voice"
+            android:background="@drawable/bg_notification_edittext" />
+    </RelativeLayout>
+
+</RelativeLayout>

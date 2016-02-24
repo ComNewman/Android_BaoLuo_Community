@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+
+    <com.baoluo.community.ui.customview.RoundImageView
+        android:id="@+id/iv_topic_nomal_comment_head"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="10dp"
+       	android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_topic_nomal_comment_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_topic_nomal_comment_head"
+        android:layout_toRightOf="@+id/iv_topic_nomal_comment_head"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="test"
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_topic_nomal_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_topic_nomal_comment_nick"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="1小时前"
+        android:textColor="#4a4a4a"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_topic_nomal_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_alignLeft="@+id/tv_topic_nomal_comment_nick"
+        android:layout_toLeftOf="@+id/tv_topic_nomal_comment_time"
+        android:layout_below="@+id/tv_topic_nomal_comment_nick"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/ib_topic_nomal_comment_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_topic_nomal_comment_content"
+        android:layout_marginRight="9dp"
+        android:paddingBottom="9dp"
+        android:background="@color/transparent"
+        android:src="@drawable/ib_topic_high_comment_show" />
+    <View 
+        android:id="@+id/view_fg"
+        android:background="@color/bg_fenge"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/ib_topic_nomal_comment_show"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="3dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_topic_nomal_comment_praiseandcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/ib_topic_nomal_comment_show"
+        android:layout_alignBottom="@+id/ib_topic_nomal_comment_show"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_htxq_tanchukuang"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/btn_topic_nomal_comment_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:background="@color/transparent"
+            android:src="@drawable/selector_topic_comment_hight_praise" />
+
+        <View
+            android:id="@+id/view_comment_split1"
+            android:layout_width="0.3dip"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_topic_nomal_comment_praise"
+            android:background="#4c4c4c" />
+
+        <ImageButton
+            android:id="@+id/btn_topic_nomal_comment_trample"
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/view_comment_split1"
+            android:src="@drawable/selector_topic_comment_hight_trample" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

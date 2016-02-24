@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	
+    <ImageButton 
+        android:id="@+id/ib_humor_send_voice_record"
+        android:background="@color/transparent"
+        android:layout_marginTop="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:src="@drawable/ic_voice_luyin"/>
+    <ImageButton 
+        android:id="@+id/ib_humor_send_voice_play"
+        android:background="@color/transparent"
+        android:layout_marginTop="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/ic_voice_nor"/>
+    <ImageButton 
+        android:id="@+id/ib_humor_send_voice_pause"
+        android:background="@color/transparent"
+        android:layout_marginTop="22dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@drawable/ic_voice_pause"/>
+    <TextView 
+        android:id="@+id/tv_humor_send_voice_time"
+        android:background="@drawable/bg_tv_voice_time"
+        android:layout_marginTop="22dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <TextView 
+       android:id="@+id/tv_humor_semd_voice"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="最长可录制一分钟语音"
+       android:textSize="14sp"
+       android:textColor="#c9c9c9"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="16dp"
+       android:layout_centerHorizontal="true"
+       />
+    <ImageButton 
+        android:id="@+id/ib_humor_send_voice_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="28dp"
+        android:visibility="gone"
+        android:layout_above="@+id/tv_humor_semd_voice"
+        android:src="@drawable/ic_voice_del"
+        android:background="@color/transparent"/>
+    
+</RelativeLayout>

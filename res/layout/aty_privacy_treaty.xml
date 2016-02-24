@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/privacy_headview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:title_value="@string/head_title_privacy" />
+
+    <ScrollView
+        android:id="@+id/sv_privacy_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/privacy_headview" >
+
+        <LinearLayout
+            android:id="@+id/privacy_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+            
+            <TextView 
+                android:id="@+id/tv_privacy_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/privacy_treaty_content"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

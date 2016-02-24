@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<com.baoluo.community.ui.xlistview.XListView
+        android:id="@+id/xlv_humor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#F7F5F6"
+        android:dividerHeight="1dp" />
+</LinearLayout>
+<!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/humor_list.xml -->

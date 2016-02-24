@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"  
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_humor_item_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentTop="true" >
+
+        <com.baoluo.community.ui.customview.RoundImageView
+            android:id="@+id/riv_humor_item_avatar"
+            android:layout_width="@dimen/humor_list_avatar"
+            android:layout_height="@dimen/humor_list_avatar"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/bitboy"
+            lls:border_inside_color="#fffff1"
+            lls:border_thickness="2dp" />
+
+        <TextView
+            android:id="@+id/tv_humor_item_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/riv_humor_item_avatar"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/riv_humor_item_avatar"
+            android:text="小天使"
+            android:textColor="@color/humor_item_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_humor_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_humor_item_user"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="2015-06-16"
+            android:textColor="@color/humor_item_text"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/img_humor_item_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_humor_item_user"
+            android:layout_below="@id/tv_humor_item_user"
+            android:layout_marginTop="6dp"
+            android:paddingBottom="6dp"
+            android:src="@drawable/location_icon" />
+
+        <TextView
+            android:id="@+id/tv_humor_item_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_humor_item_location"
+            android:layout_alignTop="@+id/img_humor_item_location"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/img_humor_item_location"
+            android:gravity="center_vertical"
+            android:textColor="@color/humor_item_text"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_img"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_below="@id/rl_humor_item_head" >
+
+        <ImageView
+            android:id="@+id/iv_humor_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_no_pic" />
+        <ImageView 
+            android:id="@+id/iv_humor_item_voice"
+            android:visibility="gone"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@anim/voice_frame"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_humor_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_img"
+        android:background="@color/white"
+         >
+
+        <TextView
+            android:id="@+id/tv_humor_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="心情正文,这是心情正文心情正文"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_humor_item_praise_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp"
+            android:layout_alignLeft="@+id/tv_humor_item_content"
+            android:layout_below="@+id/tv_humor_item_content" >
+
+            <TextView
+                android:id="@+id/tv_humor_list_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_humor_praise"
+                android:drawableLeft="@drawable/selector_like"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="4dp"
+                android:text="\t赞"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+             <TextView
+                android:id="@+id/tv_humor_list_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/tv_humor_list_praise"
+                android:background="@drawable/bg_humor_praise"
+                android:drawableLeft="@drawable/ic_htxq_pl_nor"
+                android:paddingBottom="4dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="4dp"
+                android:text=" 评论"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+             
+             <ImageButton 
+                 android:id="@+id/ib_humor_share"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:padding ="10dp"
+                 android:background="@color/transparent"
+                 android:src="@drawable/ic_xqlb_fx_nor"
+                 />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

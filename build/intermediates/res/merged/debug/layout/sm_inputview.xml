@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/view_fenge"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_htxq_shurubg" >
+
+        <EditText
+            android:id="@+id/et_sminputview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/ib_sminputview_emoji"
+            android:background="@drawable/bg_htxq_shurukuang"
+            android:paddingLeft="5dp"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_sminputview_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text="发送"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/ib_sminputview_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_sminputview_send"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_biaoqing" />
+    </RelativeLayout>
+	<LinearLayout
+        android:id="@+id/ll_sminputview_face"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/face_sminputview_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_gravity="center"
+            android:padding="10dip"/>
+        <LinearLayout
+            android:id="@+id/face_sminputview_dots_container"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/sm_inputview.xml -->

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_person_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:title_value="我的二维码" />
+
+    <LinearLayout
+        android:id="@+id/ll_person_code_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_person_code_userinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="22dp" >
+
+            <ImageView
+                android:id="@+id/iv_person_code_head"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_margin="22dp"
+                android:src="@drawable/head_default"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/ll_person_code_userinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_person_code_head"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_person_code_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables" >
+
+                    <TextView
+                        android:id="@+id/tv_person_code_name"
+                        style="@style/text_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小瓶子" />
+
+                    <ImageView
+                        android:id="@+id/iv_person_code_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/ic_person_code_nv"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_person_code_area"
+                    style="@style/text_mid_tinge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="广东   深圳" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_person_code"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/bg_no_pic" />
+        
+        <Button 
+            android:id="@+id/btn_save_person_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="保存为图片"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@drawable/bg_person_code_save"
+            android:layout_gravity="center_horizontal"
+            style="@style/text_big"
+            />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_code_person.xml -->

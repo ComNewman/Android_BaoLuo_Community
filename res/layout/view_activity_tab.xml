@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_event_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/event_detail"
+            android:textColor="@drawable/selector_color_event_classify"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="#e2e2e2" />
+
+        <Button
+            android:id="@+id/btn_event_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/event_detail_comment"
+            android:textColor="@drawable/selector_color_event_classify"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view_bord_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#e2e2e2"/>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="7dp" >
+
+    <ImageView
+        android:id="@+id/iv_topic_list_item_pic"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:id="@+id/tv_topic_list_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_topic_list_item_pic"
+        android:layout_toRightOf="@+id/iv_topic_list_item_pic"
+        android:layout_toLeftOf="@+id/tv_topic_list_item_time"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#ffa7a7"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_topic_list_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_topic_list_item_title"
+        android:layout_marginRight="9dp"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_topic_list_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_topic_list_item_title"
+        android:layout_alignRight="@+id/tv_topic_list_item_time"
+        android:layout_below="@+id/tv_topic_list_item_title"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="2dp"
+        android:lines="4"
+        android:maxLength="66"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_topic_list_item_praiseandcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_topic_list_item_pic"
+        android:layout_alignLeft="@+id/tv_topic_list_item_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/btn_topic_list_item_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/tv_topic_list_item_commentnum"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_htxq_pl_nor" />
+
+        <TextView
+            android:id="@+id/tv_topic_list_item_commentnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_topic_list_item_comment"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/btn_topic_list_item_comment"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="14564131"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_topic_list_item_praisenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_topic_list_item_comment"
+            android:layout_alignTop="@+id/btn_topic_list_item_comment"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/btn_topic_list_item_comment"
+            android:gravity="center_vertical"
+            android:text="14564131"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/btn_topic_list_item_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_topic_list_item_praisenum"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_topic_item_praise" />
+    </RelativeLayout>
+
+</RelativeLayout>

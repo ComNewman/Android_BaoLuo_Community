@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+	<item android:drawable="@drawable/ic_dianzan_select" android:state_selected="true"/>
+	<item android:drawable="@drawable/ic_dianzan_select" android:state_pressed="true"/>
+	<item android:drawable="@drawable/ic_zan_nor"/>
+	
+</selector>
+<!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/drawable/selector_topic_comment_hight_praise.xml -->

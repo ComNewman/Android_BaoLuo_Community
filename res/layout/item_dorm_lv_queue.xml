@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_dorm_queue_root"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+	 <com.baoluo.community.ui.customview.RoundImageView
+            android:id="@+id/rv_dorm_queue_avatar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="11dp"
+            android:src="@drawable/bitboy" />
+	 
+	 <TextView 
+	     android:id="@+id/tv_dorm_queue_ownew"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:singleLine="true"
+	     android:maxEms="8"
+	     android:text="诸葛孔明"
+	     android:textSize="16sp"
+	     android:textColor="@color/white"
+	     android:layout_alignTop="@+id/rv_dorm_queue_avatar"
+	     android:layout_toRightOf="@+id/rv_dorm_queue_avatar"/>
+	  <TextView 
+	     android:id="@+id/tv_dorm_queue_waitNum"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignLeft="@+id/tv_dorm_queue_ownew"
+	     android:layout_alignBottom="@+id/rv_dorm_queue_avatar"
+	     android:text="等待人数 2/8"
+	     android:textSize="14sp"
+	     android:textColor="#c1c1c1"
+	     />
+	  <TextView 
+	     android:id="@+id/tv_dorm_queue_waittime"
+	     android:layout_marginRight="20dp"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:text="等待15分钟"
+	     android:textSize="14sp"
+	     android:textColor="#dadada"
+	     android:layout_alignTop="@+id/rv_dorm_queue_avatar"
+	     android:layout_alignParentRight="true"/>
+	  <ImageButton 
+	      android:id="@+id/ib_dorm_queue_cancle"
+	      android:paddingLeft="12dp"
+	      android:paddingTop="12dp"
+	      android:paddingRight="12dp"
+	      android:layout_alignBottom="@+id/rv_dorm_queue_avatar"
+	      android:layout_alignRight="@+id/tv_dorm_queue_waittime"
+	      android:background="@color/transparent"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:src="@drawable/btn_dorm_list_queue_cancle"/>
+	  <View 
+	      android:id="@+id/view_dorm_list_queue_line"
+	      android:layout_below="@+id/rv_dorm_queue_avatar"
+	      android:layout_alignLeft="@+id/rv_dorm_queue_avatar"
+	      android:background="@drawable/bg_dorm_list_queue_line"
+	      android:layout_width="match_parent"
+	      android:layout_height="0.5dip"/>
+</RelativeLayout>

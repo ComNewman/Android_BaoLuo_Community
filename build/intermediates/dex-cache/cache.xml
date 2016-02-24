@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\json-simple-1.1.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="5d6f9b6a9ddca2a28c0216cc44efb2e20d9c23b5">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\json-simple-1.1.1-f458830c5fe05e9d7213a19764df450da81ac9ec.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\org.eclipse.paho.android.service-1.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="442f81337cb942a855ab20a4a16bfe43adb612c7">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\org.eclipse.paho.android.service-1.0.2-88b4e4982428d122a9dec4a0cc5a18784c92be49.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\javassist-3.18.0-GA.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="fbdd54ef493836f3ce32031cfe86d6ca8f15539f">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\javassist-3.18.0-GA-15caa8ef8ac6305152d733624ca87498e8225a18.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\activation.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8acf42612ad530a4fbf4058982555394298b4ed8">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\activation-73df25412520c6990ae39b931feb0e3154d41800.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\universal-image-loader-1.9.3-f1f0a83dc8cda072db795e221ff0de67ea37ede0.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\commons-codec-1.11.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a42ebfad39f2287abc34adaae0633f867e1d65e0">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\commons-codec-1.11-3e7d1e81c15ea7f25a8c8ec9144b827b649d7009.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\Android_2DMapApi_V2.4.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="adca12b4530f28ebf2c0d333cb35b67191400c49">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\Android_2DMapApi_V2.4.1-29547990cdd67692357acba7bcfe352129473356.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\rebound-core.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f7360f236f32c0ef2ec74115f8c7163752632883">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\rebound-core-dc617cd3a69648b489fdc2d568318c4b3b3ff418.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\nineoldandroids-2.4.0-b597c05625c716629b2f9be52e7ac1fd3b17fdae.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\dnsjava-2.1.6.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="aabc2275c1d49707ccbb8d12310013b8ed42a5aa">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\dnsjava-2.1.6-9ba63fadb1f0e40ff5fa982501b1df2e8490ae65.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\org.eclipse.paho.client.mqttv3-1.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="11752d3f24d1a9deda4533a7ca18d8496417ceeb">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\org.eclipse.paho.client.mqttv3-1.0.2-04b44a4f2de2904ec6bc52713925afb3e710434e.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\internal_impl-20.0.0-b4c16382b3ced4d81f42221ddb474715ec5463fc.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\classes-59bb5d4a5066e25825490012bd41a29b10d207bd.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\exploded-aar\Android_BaoLuo_Community\pullToRefresh_lib\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="107b03382008ce52639faec840bf0becbe941074">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\classes-1190d474dcf2f19668729dbbfc127483079aea89.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\eventbus.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9a179701fef5778920c0471563bc1642e5df8217">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\eventbus-7b05fa2ab45be9ff54e80471f85848ab60313189.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\Android_Location_V1.3.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="b64d1f38ef7ee28b538d61a39d040f249c65587c">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\Android_Location_V1.3.2-2d9d5c841aa2689b3cc2c2d969c8e144d8a9c055.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\gson-2.2.4-42e93fc88a0a1ff74ed8afdd3674a950721b33b4.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\zxing.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e88c14e6e7daa0fa65172a62b54ee6a16ff4162d">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\zxing-aa16660dbfe1ae93001f73e88062c6ffb65dbf8e.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\msgpack-0.6.11.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="77c2c48e51dc90d2e3f2f37310d6cbe10439234f">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\msgpack-0.6.11-7ca4dea4e77524e271631d04f219e48eb5c9892e.jar" />
+    </item>
+    <item
+        jar="D:\Program Files\Android\sdk\android-sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\support-annotations-20.0.0-e4f9cddcb6b183cb02a6d3d9b9ce11947e1546e0.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\asmack-android-8-4.0.7.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8451d8474c803b6ec1748b09b6866fee84ff4f66">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\asmack-android-8-4.0.7-fbf57d37dbd6b676d5decc94be44926d5aac6140.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\greendao-1.3.7.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="dda08161d004c4df96938da6909f1c2b96cd33c8">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\greendao-1.3.7-e235a7bf8f7a03db72be0cd9caf72ac984864086.jar" />
+    </item>
+    <item
+        jar="E:\work\Docs\workspace\Android_BaoLuo_Community\libs\AMap_Services_V2.4.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="3057067b0d15469c99c2e8b1a87d66c94862ac7a">
+        <dex dex="E:\work\Docs\workspace\Android_BaoLuo_Community\build\intermediates\pre-dexed\release\AMap_Services_V2.4.0-0b130c66aeb2daccd93bec4545027d56e3aa49e3.jar" />
+    </item>
+
+</items>

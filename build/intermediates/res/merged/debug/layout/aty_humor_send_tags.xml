@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/tv_humor_send_tags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/text_humor_send"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:gravity="top"
+        android:text="点击空白处输入标签"/>
+
+</LinearLayout>
+<!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_humor_send_tags.xml -->

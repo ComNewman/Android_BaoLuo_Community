@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:orientation="vertical" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_event_tags_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:right_icon="@drawable/ic_create"
+        lls:title_value="@string/head_tags" />
+
+    <RelativeLayout
+        android:id="@+id/rl_event_tags_search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_event_tags_search_in"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_topic_search" >
+
+            <EditText
+                android:id="@+id/et_event_tags_search"
+                style="@style/text_setting_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="6dp"
+                android:background="@color/transparent"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/ib_event_tags_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:padding="14dp"
+                android:src="@drawable/btn_topic_search"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/ib_event_tags_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:padding="14dp"
+                android:src="@drawable/ic_tags_add"
+                android:visibility="gone" />
+             <ImageButton
+                android:id="@+id/ib_event_tags_del"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="46dp"
+                android:background="@color/transparent"
+                android:padding="14dp"
+                android:src="@drawable/ic_delect"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_event_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/ll_event_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_event_send_tags_classify"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/et_event_send_tags_classify"
+                    style="@style/text_setting_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="14dp"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="@string/event_send_tags_classify_hint" />
+
+                <ImageButton
+                    android:id="@+id/ib_event_send_tags_classify_flag"
+                    android:layout_width="46dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:src="@drawable/selector_bl_xiala" />
+
+                <View
+                    android:id="@+id/view_fenge_tags"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dip"
+                    android:layout_alignBottom="@+id/et_event_send_tags_classify"
+                    android:layout_alignLeft="@+id/et_event_send_tags_classify"
+                    android:layout_alignParentRight="true"
+                    android:background="#D3D3D3" />
+            </RelativeLayout>
+
+            <com.baoluo.community.ui.customview.ListViewForScrollView
+                android:id="@+id/lv_event_send_classify_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="visible"/>
+            <RelativeLayout
+                android:id="@+id/rl_event_send_tags"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_event_send_tags"
+                    style="@style/text_setting_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="14dp"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="@string/event_send_tags_def_hint" />
+
+                <View
+                    android:id="@+id/view_fenge"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dip"
+                    android:layout_alignBottom="@+id/tv_event_send_tags"
+                    android:layout_alignLeft="@+id/tv_event_send_tags"
+                    android:layout_alignParentRight="true"
+                    android:background="#D3D3D3" />
+            </RelativeLayout>
+
+            <com.baoluo.community.ui.customview.ListViewForScrollView
+                android:id="@+id/lv_event_send_tags"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

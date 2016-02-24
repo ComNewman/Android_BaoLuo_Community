@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_change_pswd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:right_icon="@drawable/ic_create"
+        lls:title_value="@string/head_title_change_pswd" />
+
+    <EditText
+        android:id="@+id/et_change_pswd_old"
+        style="@style/text_setting_main"
+        android:hint="@string/change_pswd_old"
+        android:background="@color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginLeft="12dp"
+        android:inputType="textPassword"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_fenge" />
+     <EditText
+        android:id="@+id/et_change_pswd_new"
+        style="@style/text_setting_main"
+        android:inputType="textPassword"
+        android:hint="@string/change_pswd_new"
+        android:background="@color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginLeft="12dp"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_fenge" />
+
+</LinearLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_change_pswd.xml -->

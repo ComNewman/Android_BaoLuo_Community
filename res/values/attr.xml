@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="roundedimageview"> 
+        <attr name="border_thickness" format="dimension" /> 
+        <attr name="border_inside_color" format="color" /> 
+        <attr name="border_outside_color" format="color"></attr> 
+    </declare-styleable>  
+
+    <declare-styleable name="HeadView"> 
+        <attr name="head_color"  format="color"/>
+        <attr name="title_value" format="string"/>
+        <attr name="left_show_icon"   format="boolean"/>
+        <attr name="left_icon"   format="reference"/>   <!-- 是否显示图形 -->
+        <attr name="left_name"   format="string"/>
+        
+        <attr name="right_show_icon"  format="boolean"/>
+        <attr name="right_icon"  format="reference"/>
+        <attr name="right_name"  format="string"/>
+    </declare-styleable>
+    
+    <declare-styleable name="BottomMenu">
+        <attr name="btn_bg" format="reference"/>
+        <attr name="btn_name" format="string"/>
+        
+    </declare-styleable>
+    
+    
+    <declare-styleable name="GifView">  
+        <attr name="gif" format="reference" />  
+        <attr name="paused" format="boolean" />  
+    </declare-styleable>  
+    <declare-styleable name="CustomTheme">  
+        <attr name="gifViewStyle" format="reference" />  
+    </declare-styleable> 
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_add_friend_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="11"
+        android:background="#333333"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_add_friend_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="返回"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_add_friend_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="新朋友" />
+
+        <Button
+            android:id="@+id/btn_add_friend_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="right|center_vertical"
+            android:text="设置"
+            android:textSize="12sp" />
+    </LinearLayout>
+	<LinearLayout 
+	    android:id="@+id/ll_add_friend_select"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="10"
+	    android:background="@color/grey"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:id="@+id/tv_add_friend_checkmsg"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:textSize="18sp"
+	        android:text="验证消息"/>
+	    
+	    <TextView 
+	        android:id="@+id/tv_add_friend_recommend"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:textSize="18sp"
+	        android:gravity="center"
+	        android:layout_weight="1"
+	        android:text="好友推荐"/>
+	</LinearLayout>
+	
+	<ListView 
+	    android:id="@+id/lv_add_friend"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_weight="3"
+	    />
+</LinearLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/activity_add_friend.xml -->

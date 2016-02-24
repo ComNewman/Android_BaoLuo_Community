@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_security_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:title_value="隐私与安全" />
+
+    <RelativeLayout
+        android:id="@+id/rl_my_location"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@+id/hv_security_head" >
+
+        <TextView
+            style="@style/text_setting_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="公开我的位置"
+            />
+
+        <ImageButton
+            android:id="@+id/ib_my_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/green_switch" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_fen_ge1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/rl_my_location"
+        android:background="@color/bg_fenge" />
+
+    <RelativeLayout
+        android:id="@+id/rl_verify"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/v_fen_ge1" >
+
+        <TextView
+            style="@style/text_setting_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="加我好友验证"
+            />
+
+        <ImageButton
+            android:id="@+id/ib_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/green_switch" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_fen_ge2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/rl_verify"
+        android:background="@color/bg_fenge" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_by_phone"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_below="@id/v_fen_ge2" >
+
+        <TextView
+            style="@style/text_setting_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="通过手机号搜索到我"
+            />
+
+        <ImageButton
+            android:id="@+id/ib_by_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/green_switch" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_fen_ge4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/rl_by_phone"
+        android:background="@color/bg_fenge" />
+
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/bg_exit"
+        android:text="退出当前账号"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</RelativeLayout>

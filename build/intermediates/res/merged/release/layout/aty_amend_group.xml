@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:right_name="确定"
+        lls:right_show_icon="false"
+        lls:title_value="消息" />
+
+    <RelativeLayout
+        android:id="@+id/rl_editext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hv_head"
+        android:layout_marginTop="18dp"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/et_amend_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="#323232"
+            android:textSize="13sp" />
+
+        <ImageButton
+            android:id="@+id/ib_del_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/img_amend_group_del_text"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hv_head"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_sex_m"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/tv_sex_m"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="男" />
+
+            <ImageView
+                android:id="@+id/iv_sex_sel_flag_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/img_sex_sel_flag"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_sex_split"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/rl_sex_m"
+            android:layout_marginLeft="12dp"
+            android:background="#e0e0e0" />
+
+        <RelativeLayout
+            android:id="@+id/rl_sex_w"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/view_sex_split" >
+
+            <TextView
+                android:id="@+id/tv_sex_w"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="女" />
+
+            <ImageView
+                android:id="@+id/iv_sex_sel_flag_w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/img_sex_sel_flag"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_amend_group.xml -->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:drawable="@drawable/bg_dorm_title_singer"  android:state_selected="true" ></item>
+    <item android:drawable="@drawable/bg_dorm_title_singer"  android:state_pressed="true" ></item>
+    <item android:drawable="@drawable/bg_dorm_title_single_nomal"></item>
+
+</selector>
+<!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/drawable/selector_btn_dorm_single.xml -->

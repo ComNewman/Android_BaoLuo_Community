@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <ImageView 
+        android:id="@+id/img_mytask_item_pic"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/head_defult"
+        />
+	<TextView 
+	    android:id="@+id/tv_mytask_item_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:layout_alignTop="@+id/img_mytask_item_pic"
+	    android:layout_alignBottom="@+id/img_mytask_item_pic"
+	    android:layout_toRightOf="@+id/img_mytask_item_pic"
+	    android:text="活动标题"/>
+	<TextView 
+	    android:id="@+id/tv_mytask_item_statu"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    android:layout_alignTop="@+id/img_mytask_item_pic"
+	    android:layout_alignBottom="@+id/img_mytask_item_pic"
+	    android:layout_alignParentRight="true"
+	    android:text="活动阶段"/>
+</RelativeLayout>
+<!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/mytask_item.xml -->

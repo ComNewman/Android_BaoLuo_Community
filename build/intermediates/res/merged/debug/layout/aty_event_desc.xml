@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_event_send_desc_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:right_icon="@drawable/ic_create"
+        lls:title_value="@string/head_activity_send_title_desc" />
+    
+    <RelativeLayout
+        android:id="@+id/rl__event_send_desc_pic"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_humor_send_pic"
+            />
+		<ImageView
+            android:id="@+id/iv_event_send_desc_add_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_humor_send_add_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_event_send_desc_add_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/event_send_desc_add_pic"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp__event_send_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+         
+         <TextView 
+             android:id="@+id/tv_page_flag"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:visibility="gone"
+             android:textSize="14sp"
+             android:layout_margin="14dp"
+             android:textColor="@color/white"
+             android:layout_alignParentRight="true"
+             android:layout_alignBottom="@+id/vp__event_send_desc"/>
+    </RelativeLayout>
+    <EditText 
+        android:id="@+id/et_desc"
+        android:paddingTop="12dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        style="@style/text_setting_main"
+        android:hint="@string/event_send_desc_et"
+        android:gravity="top"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+<!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_event_desc.xml -->

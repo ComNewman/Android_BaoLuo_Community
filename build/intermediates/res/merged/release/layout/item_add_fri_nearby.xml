@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_nearby_head"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/default_head" />
+
+    <TextView
+        android:id="@+id/tv_nearby_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_nearby_head"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/iv_nearby_head"
+        android:text="裤裆藏枪"
+        android:textColor="#646464"
+        android:textSize="13sp" />
+	<ImageButton 
+	    android:id="@+id/ib_nearby_location"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@color/transparent"
+	    android:layout_alignLeft="@+id/tv_nearby_nick"
+	    android:src="@drawable/btn_nearby_location"
+	    android:layout_alignBottom="@+id/iv_nearby_head"
+	    android:layout_toRightOf="@+id/iv_nearby_head"/>
+	<TextView 
+	    android:id="@+id/tv_nearby_location"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/iv_nearby_head"
+	    android:layout_toRightOf="@+id/ib_nearby_location"
+	    android:layout_marginLeft="5dp"
+	    android:text="200m"
+	    android:textColor="#646464"
+	    android:textSize="10sp"
+	    />
+	    <TextView 
+	    android:id="@+id/tv_nearby_address"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/iv_nearby_head"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:text="深圳职业技术学院"
+	    android:textColor="#646464"
+	    android:textSize="10sp"
+	    />
+	    <TextView 
+	    android:id="@+id/tv_nearby_showtime"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/iv_nearby_head"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:text="10分钟前"
+	    android:textColor="#646464"
+	    android:textSize="10sp"
+	    />
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/item_add_fri_nearby.xml -->

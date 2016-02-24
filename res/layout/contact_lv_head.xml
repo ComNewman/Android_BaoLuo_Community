@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_contacts_attend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <ImageView
+            android:id="@+id/img_contacts_attend_head"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/img_contacts_attend" />
+
+        <TextView
+            android:id="@+id/tvcontacts_attend__title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="我的关注"
+            android:textSize="16sp"
+            android:textColor="#323232" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_spilit"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/bg_topic_item_spilit" />
+
+    <LinearLayout
+        android:id="@+id/ll_contacts_tribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <ImageView
+            android:id="@+id/img_contacts_tribe_head"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/img_contacts_tribe" />
+
+        <TextView
+            android:id="@+id/tv_contacts_tribe_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="部落"
+            android:textSize="16sp"
+            android:textColor="#323232" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/iv_topictag_pic"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_no_pic" />
+
+    <TextView
+        android:id="@+id/tv_topictag_tag"
+        style="@style/text_setting_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/iv_topictag_pic"
+        android:text="#天荒地老#" />
+
+    <TextView
+        android:id="@+id/tv_topictag_content"
+        style="@style/text_13_999"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_topictag_tag"
+        android:layout_below="@+id/tv_topictag_tag"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/iv_topictag_pic"
+        android:text="gegetetetgtgejogoehijgejgpoejgoejnghoiejngoh" />
+
+    <ImageView
+        android:id="@+id/iv_topictag_participator_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_topictag_tag"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/iv_topictag_pic"
+        android:src="@drawable/ic_topictag_participator" />
+    
+    
+    <TextView
+        android:id="@+id/tv_topictag_participator"
+        style="@style/text_small_tinge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="13dp"
+        android:layout_marginLeft="6dp"
+        android:gravity="bottom"
+        android:layout_alignBottom="@+id/iv_topictag_participator_ic"
+        android:layout_toRightOf="@+id/iv_topictag_participator_ic"
+        android:text="55555人参与" />
+    
+	<View 
+	    android:layout_alignLeft="@+id/iv_topictag_pic"
+	    android:layout_alignRight="@+id/tv_topictag_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.3dip"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/bg_fenge"/>
+</RelativeLayout>

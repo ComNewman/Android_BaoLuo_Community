@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_send_color">
+    <RelativeLayout 
+        android:id="@+id/rl_2_content"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="@dimen/send_margin_width"
+        android:layout_marginRight="@dimen/send_margin_width"
+        android:padding="6dp"
+        android:background="@drawable/bg_white_radius_border">
+        <EditText 
+            android:id="@+id/et_content"
+            android:imeOptions="actionNone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/iv_content"
+            android:background="@color/transparent"
+            android:padding="4dp"
+            android:gravity="start"
+            android:textColorHint="@color/send_text_color_tint"
+            android:textSize="@dimen/send_normal_font_size"
+            android:textColor="@color/send_text_color"
+            android:hint="请输入详细信息，最多可输入200个字"/>
+    </RelativeLayout>
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_humor_send_1.xml -->

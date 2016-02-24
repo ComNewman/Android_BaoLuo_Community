@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/event_group_hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:title_value="群组设置" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/event_group_hv_head" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rl_event_group_members"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="15dp" >
+
+                <com.baoluo.community.ui.customview.NoScrollGridView
+                    android:id="@+id/gv_event_group_members"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnWidth="60dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="8dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v_event_group_fenge1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/rl_event_group_members"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#ECECEC" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_event_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_event_group_fenge1"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/tv_event_group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="群名称"
+                    android:textColor="#323232"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_event_group_name_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/iv_event_group_right_groupname"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:maxEms="15"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+                 <ImageView
+                    android:id="@+id/iv_event_group_right_groupname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon_add_group" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v_event_group_fenge2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/rl_event_group_name"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#ECECEC" />
+
+            <RelativeLayout
+                android:id="@+id/rl_event_group_my_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_event_group_fenge2"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="我在本群呢称"
+                    android:textColor="#323232"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_event_group_my_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/iv_event_group_right_nick"
+                    android:layout_marginRight="12dp"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/iv_event_group_right_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon_add_group" />
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/v_event_group_fenge4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rl_event_group_my_name"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#ECECEC" />
+
+            <RelativeLayout
+                android:id="@+id/rl_event_group_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_event_group_fenge4"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="群二维码"
+                    android:textColor="#323232"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/iv_event_group_to_show1111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon_add_group" />
+
+                <ImageView
+                    android:id="@+id/iv_event_group_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@id/iv_event_group_to_show1111"
+                    android:src="@drawable/icon_er_code" />
+            </RelativeLayout>
+			<View 
+			    android:id="@+id/view_event_group_fenge5"
+			    android:layout_width="match_parent"
+			     android:layout_height="1dp"
+                android:layout_below="@id/rl_event_group_code"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#ECECEC"
+			    />
+			 <RelativeLayout
+                android:id="@+id/rl_event_group_chat_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_event_group_fenge5"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="查找聊天内容"
+                    android:textColor="#323232"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/iv_event_group_to_show_chat_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon_add_group" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_event_group_to_top"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_below="@id/rl_event_group_chat_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="置顶聊天"
+                    android:textColor="#323232"
+                    android:textSize="13sp" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_event_group_to_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/green_switch" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v_event_group_fenge5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/rl_event_group_to_top"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#ECECEC" />
+
+            <RelativeLayout
+                android:id="@+id/rl_event_group_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_event_group_fenge5"
+                android:background="@color/white"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="消息免打扰"
+                    android:textColor="#323232"
+                    android:textSize="13sp" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_event_group_notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/green_switch" />
+            </RelativeLayout>
+			<RelativeLayout
+                android:id="@+id/rl_event_group_auto_attend"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_below="@id/rl_event_group_notice"
+                android:layout_marginTop="20dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_auto_attend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:text="自动报名"
+                    android:textColor="#323232"
+                    android:textSize="13sp" />
+
+                <ImageButton
+                    android:id="@+id/ib_event_group_auto_attend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/green_switch" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/v_event_group_fenge6"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/rl_event_group_auto_attend"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#ECECEC" />
+			<TextView 
+			    android:id="@+id/tv_event_group_attend_notice"
+			    android:layout_below="@+id/v_event_group_fenge6"
+			    android:layout_marginTop="20dp"
+			    android:layout_marginLeft="12dp"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="12sp"
+			    android:textColor="#a9a9a9"
+			    android:text="创建当天活动报名截止时间默认为活动开始时间\n创建非当天活动 报名截止时间默认为前一天23：59：59\n报名截止开关自动关闭，活动发起人可重新开启。"
+			    />
+            <Button
+                android:id="@+id/btn_event_group_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_event_group_attend_notice"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="29dp"
+                android:background="@drawable/bg_exit"
+                android:text="删除并退出"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_event_group_info.xml -->

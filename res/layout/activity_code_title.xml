@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mmtitle_bg_alpha" >
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_back"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/title_top_bottom_margin"
+        android:layout_marginTop="@dimen/title_top_bottom_margin"
+        android:text="二维码扫描"
+        android:textColor="@color/white"
+        android:textSize="@dimen/head_title_text_size" />
+
+    <Button
+        android:id="@+id/button_photo"
+        android:layout_width="50.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@color/transparent"
+        android:text="相册"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

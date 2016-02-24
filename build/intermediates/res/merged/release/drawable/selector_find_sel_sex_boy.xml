@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:drawable="@drawable/cb_setsex_boy_selected" android:state_checked="true"/>
+	<item android:drawable="@drawable/cb_setsex_boy_default" android:state_checked="false"/>
+	<item android:drawable="@drawable/cb_setsex_boy_default"/>
+</selector>
+<!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/drawable/selector_find_sel_sex_boy.xml -->

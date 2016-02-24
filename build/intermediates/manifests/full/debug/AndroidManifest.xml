@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baoluo.community.ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+ <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+ <!-- 读sdcard数据权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+ <!-- 录音 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- amap定义权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- amap定义权限 -->
+    <application
+        android:name="com.baoluo.community.application.GlobalContext"
+        android:allowBackup="true"
+        android:icon="@drawable/bl_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="d1a52a1af6c0c7cc43eccdd5ba0875f0" />
+        <!-- 68ffe497059df74dbe8783bcd9aa777f -->
+
+        <service
+            android:name="com.baoluo.community.service.BackService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.baoluo.community.service.BackService" />
+            </intent-filter>
+        </service>
+
+        <!-- com.baoluo.community.ui.aty.user.AtyLogin -->
+
+        <activity
+            android:name="com.baoluo.community.ui.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/ContentOverlay" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.baoluo.community.ui.aty.user.AtyLogin" />
+        <activity android:name="com.baoluo.community.ui.GuideActivity" />
+        <activity
+            android:name="com.baoluo.community.ui.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name="com.baoluo.community.ui.AtyHumorSend" />
+        <activity android:name="com.baoluo.community.ui.AtyHumorSendNew" />
+        <activity android:name="com.baoluo.community.ui.AtyActivitySend" />
+        <activity
+            android:name="com.baoluo.community.ui.AtyEventSend"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.baoluo.community.ui.AtyEventSendDesc"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.baoluo.community.ui.AtyDormCreate"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.baoluo.community.ui.HumorDetailsActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.baoluo.community.ui.AtyHumorDetail"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name="com.baoluo.community.ui.HumroCommentActivity" />
+        <activity android:name="com.baoluo.community.ui.HumorReplyCommentActivity" />
+        <activity android:name="com.baoluo.community.ui.TranspondHumorActivity" />
+        <activity android:name="com.baoluo.community.ui.EventDetailsActivity" />
+        <activity
+            android:name="com.baoluo.community.ui.AtyInform"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name="com.baoluo.community.ui.AtyActivityDetail" />
+        <activity android:name="com.baoluo.community.ui.EventCommentActivity" />
+        <activity android:name="com.baoluo.community.ui.PublishTopicActivity" />
+        <activity
+            android:name="com.baoluo.community.ui.TopicDetailsActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.baoluo.community.ui.AtyTopicDetail"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name="com.baoluo.community.ui.MyTaskActivity" />
+        <activity android:name="com.baoluo.community.ui.AtyImgPager" />
+        <activity android:name="com.baoluo.community.ui.imgpick.AtyImageBrowse" />
+        <activity
+            android:name="com.baoluo.community.ui.AtySelPlaceDialog"
+            android:theme="@style/dialogAty" />
+        <activity android:name="com.baoluo.community.ui.AtyTopicTheme" />
+        <activity
+            android:name="com.baoluo.community.ui.AtyFriInfoInform"
+            android:theme="@style/dialogAty" />
+        <activity
+            android:name="com.baoluo.community.ui.AtyDormSelType"
+            android:theme="@style/dialogAty" />
+        <activity
+            android:name="com.baoluo.community.ui.AtySelPublishRange"
+            android:theme="@style/dialogAty" />
+        <activity
+            android:name="com.baoluo.community.ui.AtySelTags"
+            android:theme="@style/dialogAty" />
+        <activity
+            android:name="com.baoluo.community.ui.AtySelCitys"
+            android:theme="@style/dialogAty" />
+        <activity
+            android:name="com.baoluo.im.ui.AtyDormGetNick"
+            android:theme="@style/dialogAty" />
+        <activity android:name="com.baoluo.community.ui.AtySelLocation" />
+        <activity
+            android:name="com.baoluo.community.ui.AtyTags"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.baoluo.community.ui.AtyEventTags"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name="com.baoluo.community.ui.AtyCreatePosition" />
+        <activity android:name="com.baoluo.community.support.zxing.view.CaptureActivity" />
+        <!-- 用户相关 -->
+        <activity android:name="com.baoluo.community.ui.aty.user.AtyRegister" />
+        <activity android:name="com.baoluo.community.ui.AtyFriInfo" />
+        <!-- im 相关 -->
+        <activity
+            android:name="com.baoluo.im.ui.AtyChatMqtt"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name="com.baoluo.im.ui.AtyGroupList" />
+        <activity android:name="com.baoluo.im.ui.AtyDormChat" />
+        <activity
+            android:name="com.baoluo.im.ui.AtyAddFriend"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity android:name="com.baoluo.im.ui.AtyGroupInfo" />
+        <activity android:name="com.baoluo.im.ui.AtyEventGroupInfo" />
+        <activity android:name="com.baoluo.im.ui.AtyNewFri" />
+        <activity
+            android:name="com.baoluo.im.ui.AtyFriMenu"
+            android:theme="@style/dialogAty" />
+        <activity android:name="com.baoluo.im.ui.AtyPushNotification" />
+        <activity android:name="com.baoluo.im.ui.AtyAddUser2Group" />
+        <activity
+            android:name="com.baoluo.im.ui.AtyMultiChatMqtt"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name="com.baoluo.im.ui.AtyChatSet" />
+        <activity android:name="com.baoluo.im.ui.AtyAmendGroup" />
+        <activity android:name="com.baoluo.im.ui.AtyGroupCode" />
+        <activity android:name="com.baoluo.im.ui.AtyMsgSetting" />
+        <activity android:name="com.baoluo.im.ui.AtyAboutBaoluo" />
+        <activity android:name="com.baoluo.im.ui.AtyPersonal" />
+        <activity android:name="com.baoluo.im.ui.AtyPerson" />
+        <activity
+            android:name="com.baoluo.im.ui.AtyAffirm"
+            android:theme="@style/dialogAty" />
+        <activity android:name="com.baoluo.im.ui.AtyFunctionIntroduce" />
+        <activity android:name="com.baoluo.community.ui.aty.user.AtyFindPswd" />
+        <activity android:name="com.baoluo.community.ui.aty.user.AtySetNick" />
+        <activity android:name="com.baoluo.community.ui.aty.user.AtyPrivacyTreaty" />
+        <activity android:name="com.baoluo.im.ui.AtySecurity" />
+        <activity
+            android:name="com.baoluo.im.ui.AtyChangePswd"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name="com.baoluo.im.ui.AtyPersonCode" />
+        <activity android:name="com.baoluo.im.ui.AtySetting" />
+        <activity android:name="com.baoluo.im.ui.AtyIMSearch" />
+        <activity android:name="com.baoluo.im.ui.AtyDorm" />
+        <activity android:name="com.baoluo.im.ui.AtyDormList" />
+        <!-- 测试activity -->
+        <activity android:name="com.baoluo.community.ui.AmapLBSDemo" />
+    </application>
+
+</manifest>

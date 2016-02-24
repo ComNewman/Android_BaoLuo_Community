@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:lls="http://schemas.android.com/apk/res/com.baoluo.community.ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/myLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="显示定位结果信息" />
+    
+    <Button 
+        android:id="@+id/btn_mybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定位"/>
+    <ImageView
+        android:layout_width="100dp" 
+        android:layout_height="100dp" 
+        android:src="@drawable/bitboy"/>
+    
+    <com.baoluo.community.ui.customview.RoundImageView
+        android:layout_width="100dp" 
+        android:layout_height="100dp" 
+        android:src="@drawable/bitboy"
+        lls:border_outside_color="#000000" 
+        lls:border_inside_color="#fffff0"
+        lls:border_thickness="10dp"/>
+        
+    <com.baoluo.community.ui.customview.RoundImageView
+        android:layout_width="100dp" 
+        android:layout_height="100dp" 
+        android:src="@drawable/bitboy"
+        lls:border_outside_color="#000000" 
+        lls:border_thickness="10dp"/>
+    
+    <com.baoluo.community.ui.customview.RoundImageView
+        android:layout_width="100dp" 
+        android:layout_height="100dp" 
+        android:src="@drawable/bitboy"
+        lls:border_inside_color="#000000" 
+        lls:border_thickness="10dp"/>
+        
+    
+</LinearLayout>

@@ -1,0 +1,42 @@
+<resources>
+	
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="footer_height">90dp</dimen>
+    <dimen name="footer_padding">10dp</dimen>
+    
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="head_filter_text_size">14sp</dimen>
+    <dimen name="head_title_text_size">16sp</dimen>
+    <dimen name="head_title_margin_left">10dp</dimen>
+    <dimen name="title_top_bottom_margin">10dp</dimen>
+     <dimen name="more_window_item_margin">12dp</dimen>
+    
+    <dimen name="small_font_size">12sp</dimen>
+    <dimen name="little_font_size">13sp</dimen>
+    <dimen name="index_channel_font_size">16sp</dimen>
+    <dimen name="index_more_font_size">13sp</dimen>
+    <dimen name="index_img_border_width">2dp</dimen>
+    <dimen name="index_img_height">160dp</dimen>
+    <dimen name="send_margin_width">20dp</dimen>
+    <dimen name="send_divider_width">2dp</dimen>
+    <dimen name="send_normal_font_size">12sp</dimen>
+    <dimen name="pager_margin">45dp</dimen>
+    <dimen name="page_margin">15dp</dimen>
+   
+    <!-- 心情相关 -->
+    <dimen name="humor_send_icon_font_size">10dp</dimen>
+    <dimen name="humor_list_avatar">37dp</dimen>
+    <dimen name="humor_list_option_font_size">18px</dimen>
+    <dimen name="humor_send_margin_top">40dp</dimen>
+    <dimen name="tag_content_font_size">12sp</dimen>
+    
+    <!-- 活动相关 -->
+    <dimen name="send_activity_time_width">122dp</dimen>
+    <dimen name="send_activity_time_height">26dp</dimen>
+    <dimen name="send_activity_img_detail_size">54dp</dimen>
+    
+    
+
+</resources>

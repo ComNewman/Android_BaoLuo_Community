@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+     >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/btn_fri_info_inform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="举报"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textColor="#e60012"
+            android:textSize="15sp" />
+		<View 
+		    android:id="@+id/view_inform_split"
+		    android:layout_below="@+id/btn_fri_info_inform"
+		    android:layout_width="match_parent"
+		    android:layout_height="0.5dip"
+		    android:background="#d7d7d7"
+		    />
+        <Button
+            android:id="@+id/btn_fri_info_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_inform_split"
+            android:layout_marginTop="2dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@color/white"
+            android:text="取消"
+            android:textColor="#509ae5"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
+<!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_fri_info_inform.xml -->

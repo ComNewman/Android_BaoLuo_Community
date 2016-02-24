@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_xiangshang_selected" android:state_selected="true"></item>
+    <item android:drawable="@drawable/ic_xiangshang_selected" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/ic_xiangxia_nor"></item>
+
+</selector><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/drawable/selector_classify.xml -->

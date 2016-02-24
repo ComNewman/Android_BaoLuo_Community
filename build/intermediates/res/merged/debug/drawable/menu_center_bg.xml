@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+        android:state_pressed="true" 
+        android:drawable="@drawable/main_center"/>
+    <item 
+        android:state_selected="true"
+        android:drawable="@drawable/main_center"/>
+    
+    <item android:drawable="@drawable/main_center"/>
+</selector><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/drawable/menu_center_bg.xml -->

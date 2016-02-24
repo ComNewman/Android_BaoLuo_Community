@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="140dp"
+    android:background="@drawable/bg_sel_location"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/tv_topic_create_publish_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/publish_range"/>
+    <RelativeLayout 
+            android:id="@+id/rl_publish_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+           >
+            <Button
+                android:id="@+id/btn_publish_range_public"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/send_tag_color"
+                android:textSize="@dimen/send_normal_font_size"
+                android:background="@drawable/btn_publish_range"
+                android:text="公开"/>
+            <Button
+                android:id="@+id/btn_publish_range_appoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/send_tag_color"
+                android:textSize="@dimen/send_normal_font_size"
+                android:background="@drawable/btn_publish_range"
+                android:text="指定"/>
+            <Button
+                android:id="@+id/btn_publish_range_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/send_tag_color"
+                android:textSize="@dimen/send_normal_font_size"
+                android:background="@drawable/btn_publish_range"
+                android:text="校内"/>
+            
+            <Button
+                android:id="@+id/btn_publish_range_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/btn_publish_range_public"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/send_tag_color"
+                android:textSize="@dimen/send_normal_font_size"
+                android:background="@drawable/btn_publish_range"
+                android:text="群组"/>
+            <Button
+                android:id="@+id/btn_publish_range_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/btn_publish_range_group"
+                android:textColor="@color/send_tag_color"
+                android:textSize="@dimen/send_normal_font_size"
+                android:background="@drawable/btn_publish_range"
+                android:text="好友"/>
+            
+        </RelativeLayout>
+
+</LinearLayout>
+<!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_publish_range.xml -->

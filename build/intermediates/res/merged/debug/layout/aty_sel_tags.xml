@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:background="@drawable/bg_sel_location"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_tags_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/et_tags_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:textSize="12sp"
+            android:hint="标签字数不能超过6个字"
+            android:textColor="#B5B1B1"
+            android:background="@drawable/bg_et_tags_search" />
+        <Button
+            android:id="@+id/btn_add_tags"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="#B4B4B4"
+            android:textSize="12sp"
+            android:background="@drawable/selector_btn_add_tags"
+            android:gravity="center"
+            android:text="添加" />
+    </LinearLayout>
+
+    <HorizontalScrollView 
+        android:id="@+id/hsv_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none">
+        <com.baoluo.community.ui.customview.AddTagsView
+	        android:id="@+id/add_tags_view"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+    </HorizontalScrollView>
+
+	<Button 
+	    android:id="@+id/btn_tags_sure"
+	    android:layout_width="48dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:background="@drawable/bg_btn_tags_sure"
+	    android:textSize="12sp"
+	    android:textColor="#FFFEFE"
+	    android:layout_gravity="center_horizontal"
+	    android:text="确定"/>
+</LinearLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_sel_tags.xml -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffeef1f3"
+    android:orientation="horizontal">
+    
+    <ImageView 
+        android:id="@+id/friend_icon"
+        android:layout_width="40.0dp"
+        android:layout_height="40.0dp"
+        android:layout_margin="3dip"
+        android:background="@drawable/bitboy"/>
+
+    <TextView
+        android:id="@+id/tv_group_name"
+        android:layout_width="match_parent"
+	    android:layout_toRightOf="@id/friend_icon"
+	    android:paddingTop="5.0dp"
+	    android:textColor="#ff54acea"
+	    android:layout_height="wrap_content"
+	    android:textSize="16.0sp"
+	    android:text="游戏人间"/>
+    
+    <TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_toRightOf="@id/friend_icon"
+	    android:layout_below="@id/tv_group_name"
+	    android:layout_height="wrap_content"
+	    android:textSize="12.0sp"
+	    android:text="欢迎进入群聊"/>
+
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/im_group_item.xml -->

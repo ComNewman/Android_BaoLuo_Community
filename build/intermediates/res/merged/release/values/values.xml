@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="fris">
+        <item>13128775412</item>
+        <item>13128775413</item>
+        <item>阿郎</item>
+        <item>陈奕迅</item>
+        <item>周杰伦</item>
+        <item>曾一鸣</item>
+        <item>成龙</item>
+        <item>王力宏</item>
+        <item>汪峰</item>
+        <item>王菲</item>
+        <item>那英</item>
+        <item>张伟</item>
+        <item>张学友</item>
+        <item>李德华</item>
+        <item>郑源</item>
+        <item>白水水</item>
+        <item>白天不亮</item>
+        <item>陈龙</item>
+        <item>陈丽丽</item>
+        <item>哈林</item>
+        <item>高进</item>
+        <item>高雷</item>
+        <item>阮今天</item>
+        <item>龚琳娜</item>
+        <item>苏醒</item>
+        <item>苏永康</item>
+        <item>陶喆</item>
+        <item>沙宝亮</item>
+        <item>宋冬野</item>
+        <item>宋伟</item>
+        <item>袁成杰</item>
+        <item>戚薇</item>
+        <item>齐大友</item>
+        <item>齐天大圣</item>
+        <item>品冠</item>
+        <item>吴克群</item>
+        <item>BOBO</item>
+        <item>Jobs</item>
+        <item>动力火车</item>
+        <item>伍佰</item>
+        <item>#蔡依林</item>
+        <item>$797835344$</item>
+        <item>Jack</item>
+        <item>~夏先生</item>
+    </string-array>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="background">#1D2025</color>
+    <color name="bg_bl_text_nan_select">#5d99ff</color>
+    <color name="bg_bl_text_nan_unselect">#c4d9fd</color>
+    <color name="bg_bl_text_select">#ff7f7f</color>
+    <color name="bg_bl_text_unselect">#ffcaca</color>
+    <color name="bg_dorm_get_nick_girl">#ec64b4</color>
+    <color name="bg_dorm_get_nick_man">#3bb1d8</color>
+    <color name="bg_event_attention">#ff7f7f</color>
+    <color name="bg_fenge">#dbdbdb</color>
+    <color name="bg_send_color">#EDEDED</color>
+    <color name="bg_topic_hight_relpay">#37f5d6</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ffccddff</color>
+    <color name="content_bg_color">#26292E</color>
+    <color name="dividing_line_color">#E7E7E7</color>
+    <color name="dorm_create_title">#06222d</color>
+    <color name="filter_default_color">#666666</color>
+    <color name="filter_press_color">#FFFFFD</color>
+    <color name="green">#00ff00</color>
+    <color name="grey">#ff808080</color>
+    <color name="head_title">#26292E</color>
+    <color name="head_title_text">#ffffff</color>
+    <color name="hui_se_font_color">#656565</color>
+    <color name="humor_content">#60000000</color>
+    <color name="humor_filtrate_color_defult">#999999</color>
+    <color name="humor_filtrate_color_lostFocus">#dadada</color>
+    <color name="humor_item_text">#5c5a5f</color>
+    <color name="index_channel_font_color">#E9EFF8</color>
+    <color name="index_more_font_color">#B0B3BA</color>
+    <color name="index_user_name_fot_color">#858B96</color>
+    <color name="list_select">#C6C6C6</color>
+    <color name="login_blue_color">#099EE0</color>
+    <color name="main_btn_normal">#626973</color>
+    <color name="main_btn_selected">#464B52</color>
+    <color name="menu_bg_normal">#2B2E33</color>
+    <color name="menu_bg_selected">#22252A</color>
+    <color name="part_line_color">#2C2F34</color>
+    <color name="pls_talk_normal">#ff707277</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="range_sel">#F2F2F2</color>
+    <color name="red">#ff0000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="search_hint">#ffcccccc</color>
+    <color name="send_activity_color">#50C7DF</color>
+    <color name="send_dash_border_color">#474747</color>
+    <color name="send_divider_color">#EEEEEE</color>
+    <color name="send_tag_bg_color">#F7F7F7</color>
+    <color name="send_tag_color">#BEBEBE</color>
+    <color name="send_text_color">#5C5C5C</color>
+    <color name="send_text_color_tint">#BDBDBD</color>
+    <color name="setting_title">#4E96DF</color>
+    <color name="tag_blue">#0AC0FF</color>
+    <color name="tag_green">#6bf602</color>
+    <color name="tag_purple">#ed4cee</color>
+    <color name="tags_color">#f39633</color>
+    <color name="tags_color_se">#ff6c00</color>
+    <color name="tags_nomal">#B5B4B4</color>
+    <color name="tags_selected">#959191</color>
+    <color name="testc">#BDBAB5</color>
+    <color name="title_color">#333333</color>
+    <color name="topic_lv">#fab00f</color>
+    <color name="topic_nan">#1975ff</color>
+    <color name="topic_nv">#ff0909</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_border">#CECECE</color>
+    <declare-styleable name="BottomMenu"><attr format="reference" name="btn_bg"/><attr format="string" name="btn_name"/></declare-styleable>
+    <declare-styleable name="CustomTheme"><attr format="reference" name="gifViewStyle"/></declare-styleable>
+    <declare-styleable name="GifView"><attr format="reference" name="gif"/><attr format="boolean" name="paused"/></declare-styleable>
+    <declare-styleable name="HeadView"><attr format="color" name="head_color"/><attr format="string" name="title_value"/><attr format="boolean" name="left_show_icon"/><attr format="reference" name="left_icon"/><attr format="string" name="left_name"/><attr format="boolean" name="right_show_icon"/><attr format="reference" name="right_icon"/><attr format="string" name="right_name"/></declare-styleable>
+    <declare-styleable name="MyView"><attr format="color" name="textColor"/><attr format="dimension" name="textSize"/><attr format="dimension" name="textWordMargin"/><attr format="dimension" name="textLineMargin"/><attr format="integer" name="textBackground"/><attr format="dimension" name="textPaddingLeft"/><attr format="dimension" name="textPaddingRight"/><attr format="dimension" name="textPaddingTop"/><attr format="dimension" name="textPaddingBottom"/></declare-styleable>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode"><flag name="disabled" value="0x0"/><flag name="pullFromStart" value="0x1"/><flag name="pullFromEnd" value="0x2"/><flag name="both" value="0x3"/><flag name="manualOnly" value="0x4"/><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/></attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle"><flag name="rotate" value="0x0"/><flag name="flip" value="0x1"/></attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
+    <declare-styleable name="roundedimageview"><attr format="dimension" name="border_thickness"/><attr format="color" name="border_inside_color"/><attr format="color" name="border_outside_color"/></declare-styleable>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="footer_height">90dp</dimen>
+    <dimen name="footer_padding">10dp</dimen>
+    <dimen name="head_filter_text_size">14sp</dimen>
+    <dimen name="head_title_margin_left">10dp</dimen>
+    <dimen name="head_title_text_size">16sp</dimen>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/build/intermediates/exploded-aar/Android_BaoLuo_Community/pullToRefresh_lib/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="humor_list_avatar">37dp</dimen>
+    <dimen name="humor_list_option_font_size">18px</dimen>
+    <dimen name="humor_send_icon_font_size">10dp</dimen>
+    <dimen name="humor_send_margin_top">40dp</dimen>
+    <dimen name="index_channel_font_size">16sp</dimen>
+    <dimen name="index_img_border_width">2dp</dimen>
+    <dimen name="index_img_height">160dp</dimen>
+    <dimen name="index_more_font_size">13sp</dimen>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/build/intermediates/exploded-aar/Android_BaoLuo_Community/pullToRefresh_lib/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="little_font_size">13sp</dimen>
+    <dimen name="more_window_item_margin">12dp</dimen>
+    <dimen name="page_margin">15dp</dimen>
+    <dimen name="pager_margin">45dp</dimen>
+    <dimen name="send_activity_img_detail_size">54dp</dimen>
+    <dimen name="send_activity_time_height">26dp</dimen>
+    <dimen name="send_activity_time_width">122dp</dimen>
+    <dimen name="send_divider_width">2dp</dimen>
+    <dimen name="send_margin_width">20dp</dimen>
+    <dimen name="send_normal_font_size">12sp</dimen>
+    <dimen name="small_font_size">12sp</dimen>
+    <dimen name="tag_content_font_size">12sp</dimen>
+    <dimen name="title_top_bottom_margin">10dp</dimen>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/values/colors.xml -->
+    <eat-comment/>
+    <drawable name="testd">#00ff00</drawable>
+    <drawable name="tweet_color">#FF000000</drawable>
+    <drawable name="tweet_meta_color">#FF999999</drawable>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="about_version_code" type="id">false</item>
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="gridview" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/build/intermediates/exploded-aar/Android_BaoLuo_Community/pullToRefresh_lib/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <item name="scrollview" type="id"/>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <item name="split" type="id">false</item>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/build/intermediates/exploded-aar/Android_BaoLuo_Community/pullToRefresh_lib/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <item name="viewpager" type="id"/>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="webview" type="id"/>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="Recording_without_permission">无录音权限</string>
+    <string name="Send_voice_need_sdcard_support">发送语音需要sdcard支持</string>
+    <string name="The_recording_time_is_too_short">录音时间太短</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_friend">添加好友</string>
+    <string name="app_name">Hello Monkey</string>
+    <string name="btn_list_view">ListView demo</string>
+    <string name="btn_scroll_view">ScrollView demo</string>
+    <string name="change_pswd_new">新密码</string>
+    <string name="change_pswd_old">旧密码</string>
+    <string name="content">内容</string>
+    <string name="edittext_hint_test">测试编辑框字体大小</string>
+    <string name="event_detail">详情</string>
+    <string name="event_detail_comment">评论 %d</string>
+    <string name="event_detail_location">\t\t\t%s</string>
+    <string name="event_detail_people_num">\t人数  %1$d/%2$d</string>
+    <string name="event_detail_time">\t\t开始%1$s\t结束%2$s</string>
+    <string name="event_send_desc_add_pic">点击添加图片\n第一张为封面</string>
+    <string name="event_send_desc_et">输入活动描述</string>
+    <string name="event_send_desc_hint">描述  (不超过300个字)</string>
+    <string name="event_send_end">结束时间</string>
+    <string name="event_send_fenge">————</string>
+    <string name="event_send_location_hint">位置</string>
+    <string name="event_send_peoplenum_hint">人数</string>
+    <string name="event_send_start">开始时间</string>
+    <string name="event_send_tags_classify_hint">类型标签</string>
+    <string name="event_send_tags_def_hint">自定义标签</string>
+    <string name="event_send_tags_hint">标签</string>
+    <string name="event_send_time_hint">时间</string>
+    <string name="event_send_title_hint">标题  (不超过12个字)</string>
+    <string name="find_psd_new"> 输入新的密码</string>
+    <string name="find_psd_sure"> 确认密码</string>
+    <string name="footer_hint_load_normal">查看更多</string>
+    <string name="footer_hint_load_ready">松开载入更多</string>
+    <string name="get_code"><u>无法获取验证码</u></string>
+    <string name="head_activity_list_title">活动</string>
+    <string name="head_activity_send_title">创建活动</string>
+    <string name="head_activity_send_title_desc">描述</string>
+    <string name="head_create_place">创建位置</string>
+    <string name="head_dorm_list_title">奇葩宿舍</string>
+    <string name="head_dorm_send_title">创建宿舍</string>
+    <string name="head_find_psd">找回密码</string>
+    <string name="head_humor_detail_title">心情</string>
+    <string name="head_humor_list_title">心情约</string>
+    <string name="head_humor_send_title">创建心情</string>
+    <string name="head_inform">举报</string>
+    <string name="head_login">登录</string>
+    <string name="head_register">注册</string>
+    <string name="head_right_code">相册</string>
+    <string name="head_tags">标签</string>
+    <string name="head_title_about">关于宝落</string>
+    <string name="head_title_attend">我的关注</string>
+    <string name="head_title_baoluo">宝落</string>
+    <string name="head_title_change_pswd">修改密码</string>
+    <string name="head_title_code">二维码扫描</string>
+    <string name="head_title_contacts">联系人</string>
+    <string name="head_title_fri_info_right">更多</string>
+    <string name="head_title_function">功能介绍</string>
+    <string name="head_title_grove">小树林</string>
+    <string name="head_title_message">消息</string>
+    <string name="head_title_mine">个人信息</string>
+    <string name="head_title_privacy">隐私条约</string>
+    <string name="head_title_school_notification">校园推送</string>
+    <string name="head_title_setting">设置</string>
+    <string name="head_title_setting_msg">消息设置</string>
+    <string name="head_title_topic_theme">#话题主题#</string>
+    <string name="head_topic_list_title">话题</string>
+    <string name="head_topic_send_title">创建话题</string>
+    <string name="header_hint_refresh_loading">正在刷新…</string>
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">松开刷新</string>
+    <string name="header_hint_refresh_time">时间：</string>
+    <string name="inform_reason">选择举报原因</string>
+    <string name="inform_reason_other">其他原因（可选） </string>
+    <string name="login_account">  输入账号</string>
+    <string name="login_forget_psd">忘记密码？</string>
+    <string name="login_psd">  输入6-16位登陆密码</string>
+    <string name="mine_event_nopic">0/0</string>
+    <string name="mine_event_pic">1/%d</string>
+    <string name="mine_month">%d月</string>
+    <string name="mine_people_num">参加活动人数  %d</string>
+    <string name="mine_points">本月总积分为  %d分</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="nick_test">极品屌丝</string>
+    <string name="privacy_treaty_content">	1、服务条款的确认和接纳\n
+　　本网站及APP的各项内容和服务的所有权归本公司拥有。用户在接受本服务之前，请务必仔细阅读本条款。用户使用服务，或通过完成注册程序，表示用户接受所有服务条款。\n
+　　2、用户同意：\n
+　　(1) 提供及时、详尽及准确的个人资料。\n
+　　(2) 不断更新注册资料、符合及时、详尽、准确的要求。\n
+　　如果用户提供的资料不准确，本网站有结束服务的权利。\n
+　　本网站及APP将不公开用户的姓名、地址、电子邮箱、帐号和电话号码等信息（请阅隐私保护条款）。\n
+　　用户在本网站和APP的任何行为必须遵循：\n
+　　(1) 传输资料时必须符合中国有关法规。\n
+　　(2) 使用信息服务不作非法用途和不道德行为。\n
+　　(3) 不干扰或混乱网络服务。\n
+　　(4) 遵守所有使用服务的网络协议、规定、程序和惯例。用户的行为准则是以因特网法规，政策、程序和惯例为根据的。\n
+　　3、服务条款的修改\n
+　　本网站及APP有权在必要时修改条款，将会在页面公布。\n
+　　如果不接受所改动的内容，用户可以主动取消自己的会员资格。如果您不取消自己的会员资格，则视为接受服务条款的变动。\n
+　　4、 用户的帐号、密码和安全性\n
+　　一旦成功注册成为会员，您将有一个密码和用户名。\n
+　　用户将对用户名和密码的安全负全部责任。另外，每个用户都要对以其用户名进行的所有活动和事件负全责。您可以随时改变您的密码。\n
+　　用户若发现任何非法使用用户帐号或存在安全漏洞的情况，请立即通告本公司。\n
+　　5、拒绝提供担保\n
+　　用户明确同意使用本公司服务，由用户个人承担风险。\n
+　　本网站及APP不担保服务一定满足用户的要求，也不担保服务不会中断，对服务的及时性、安全性、出错发生都不作担保。\n
+　　用户理解并接受：任何通过服务取得的信息资料的可靠性有用性取决于用户自己的判断，用户自己承担所有风险和责任。\n
+　　6、有限责任\n
+　　本网站及APP对任何由于使用服务引发的直接、间接、偶然及继起的损害不负责任。\n
+　　这些损害可能来自（包括但不限于）：不正当使用服务，或传送的信息不符合规定等。\n
+　　7、对用户信息的存储和限制\n
+　　本网站及APP不对用户发布信息的删除或储存失败负责，本公司有判定用户的行为是否符合服务条款的要求和精神的保留权利。如果用户违背了服务条款的规定，有中断对其提供服务的权利。\n
+　　8、结束服务\n
+　　本网站及APP可随时根据实际情况中断一项或多项服务，不需对任何个人或第三方负责或知会。\n
+　　同时用户若反对任何服务条款的建议或对后来的条款修改有异议，或对服务不满，用户可以行使如下权利：\n
+　　(1) 不再使用本公司的服务。\n
+　　(2) 通知本公司停止对该用户的服务。\n
+　　9、信息内容的所有权\n
+　　本公司的信息内容包括：文字、软件、声音、相片、录象、图表；以及其它信息，所有这些内容受版权、商标、标签和其它财产所有权法律的保护。\n
+　　用户只能在授权下才能使用这些内容，而不能擅自复制、再造这些内容、或创造与内容有关的派生产品。\n
+　　10、隐私保护条款\n
+　　本网站及APP将严格保守用户的个人隐私，承诺未经过您的同意不将您的个人信息任意披露。\n
+　　但在以下情形下，我们将无法再提供您前述保证而披露您的相关信息。这些情形包括但不限于：\n
+　　* 为了您的交易顺利完成，我们不得不把您的某些信息，如您的姓名、联系电话、e-mail等提供给相关如物流服务方，以便于他们及时与您取得联系，提供服务。\n
+　　* 当您在本网站的行为违反的服务条款，或可能损害他人权益或导致他人遭受损害，只要我们相信披露您的个人资料是为了辨识、联络或采取法律行动所必要的行动时。\n
+　　* 法律法规所规定的必须披露或公开的个人信息。\n
+　　* 当司法机关或其它有权机关依法执行公务，要求提供特定个人资料时，我们必须给予必要的配合。\n
+　　11、适用法律\n
+　　上述条款将适用中华人民共和国的法律，所有的争端将诉诸于本网所在地的人民法院。\n
+　　如发生服务条款与中华人民共和国法律相抵触时，则这些条款将完全按法律规定重新解释，而其它条款则依旧保持约束力。</string>
+    <string name="publish_range">推送范围</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载中\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/build/intermediates/exploded-aar/Android_BaoLuo_Community/pullToRefresh_lib/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="pull_to_refresh_from_bottom_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">正在载入…</string>
+    <string name="pull_to_refresh_from_bottom_release_label">放开以刷新…</string>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新\u2026</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="register">验证并注册</string>
+    <string name="register_account">  输入您的手机号</string>
+    <string name="register_check_code"> 输入您收到的验证码</string>
+    <string name="register_get_check_code">获取验证码</string>
+    <string name="register_privacy">点击注册表示同意隐私条款</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="send_failure_please">发送失败，请检测服务器是否连接</string>
+    <string name="setting_about">关于宝落</string>
+    <string name="setting_change_pswd">修改密码</string>
+    <string name="setting_msg">信息设置</string>
+    <string name="setting_safety">隐私与安全</string>
+    <string name="sure">确认</string>
+    <string name="title">标题</string>
+    <string name="topic_comment_num">\t\t%d个评论</string>
+    <string name="topic_participator">\t%d人参与</string>
+    <string name="topic_praise_comment">\t\t%d</string>
+    <string name="topic_praise_num">\t\t%d个赞</string>
+    <string name="topic_title">#%s#</string>
+    <string name="user_agree"><u>用户协议</u></string>
+    <string name="user_agreement">        1.地方杰拉德减肥；快的风景啊领导军来将敌发生了打发基督教啊浪费点卡啊福建省电力附近阿斯兰的军阀势力；脚打罗脚打罗绝对是立法精神动力
+        啊房间里的伤口附近啊大家啊领导阿斯兰的肌肤阿里斯顿街发生了打发就阿斯兰多夫急啊老师的附近阿斯兰打开速度发大水了</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AddUser2GroupCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_box_switch</item>
+    </style>
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="ChattingUISplit">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ff56616c</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">11.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ChattingUIText">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">200.0dip</item>
+    </style>
+    <style name="ContentOverlay" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@null</item>  
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Widget_GifView"/>
+    <style name="anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/img_pick_dir_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/img_pick_dir_slide_out</item>
+    </style>
+    <style name="boy_bl_title">
+        <item name="android:textColor">@drawable/selector_text_color_bl_nan</item>
+    </style>
+    <style name="boy_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_find_sel_sex_boy</item>
+    </style>
+    <style name="boy_color">
+        <item name="android:textColor">#509af5</item>
+    </style>
+    <style name="boy_menu">
+        <item name="android:textColor">@drawable/menu_text_color</item>
+    </style>
+    <style name="custom_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_reg_privacy_clause</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+    <style name="dialogAty" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/bg_aty_dialog</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+    <style name="girl_bl_title">
+        <item name="android:textColor">@drawable/selector_text_color_bl</item>
+    </style>
+    <style name="girl_color">
+        <item name="android:textColor">#ff7f7f</item>
+    </style>
+    <style name="girl_menu">
+        <item name="android:textColor">@drawable/menu_text_color_nv</item>
+    </style>
+    <style name="gril_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_find_sel_sex_gril</item>
+    </style>
+    <style name="my_progress" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:windowBackground">@drawable/loading_bg</item> -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="text_13_666">
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="text_13_999">
+        <item name="android:textColor">#999999</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="text_15_333">
+        <item name="android:textColor">#333333</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="text_big">
+        <item name="android:textColor">#333333</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="text_humor_send">
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="text_mid">
+        <item name="android:textColor">#333333</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="text_mid_tinge">
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="text_setting_main">
+        <item name="android:textColor">#333333</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="text_small">
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="text_small_tinge">
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

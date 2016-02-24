@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F5F6" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:right_icon="@drawable/ic_chuangjian"
+        lls:title_value="@string/head_topic_list_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_nomal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hv_head"
+        android:background="#f7f5f5"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/ll_topic_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_topic_search"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageButton
+                android:id="@+id/img_topic_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="@color/transparent"
+                android:src="@drawable/btn_topic_search" />
+
+            <EditText
+                android:id="@+id/et_topic_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/img_topic_search"
+                android:background="@color/transparent"
+                android:singleLine="true"
+                android:textColor="#717680"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <com.baoluo.community.ui.xlistview.XListView
+            android:id="@+id/xlv_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ll_topic_search"
+            android:layout_alignRight="@+id/ll_topic_search"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/ll_topic_search"
+            android:divider="@drawable/bg_topic_item_spilit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f7f5f5"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/ll_topic_search_tag"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:background="#eaeaea"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="8dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_search_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/btn_topic_tag_search_cancle"
+                android:background="@drawable/topic_search_tag"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ib_topic_tag_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/topic_search_icon" />
+
+                <EditText
+                    android:id="@+id/et_topic_tag_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/transparent"
+                    android:hint="标签搜索话题"
+                    android:singleLine="true"
+                    android:textColor="#717680"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_topic_tag_search_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/ll_search_tag"
+                android:layout_marginRight="20dp"
+                android:background="@color/transparent"
+                android:text="取消"
+                android:textColor="#4E96DF"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/xlv_tag_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ll_topic_search_tag"
+            android:layout_below="@id/ll_topic_search_tag"
+            android:layout_marginLeft="20dp"
+            android:divider="@drawable/topic_search_result_spilit" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/fragment_baoluo_topic.xml -->

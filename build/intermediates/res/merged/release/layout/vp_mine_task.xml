@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_mine_task_event"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+         >
+
+        <ImageView
+            android:id="@+id/iv_mine_task_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/img_mine_task_event" />
+
+        <TextView
+            android:id="@+id/tv_mine_task_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_mine_task_event"
+            android:layout_centerVertical="true"
+            android:text="我的活动"
+            android:textColor="#323232"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_mine_task_event_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_mine_right_small" />
+    </RelativeLayout>
+	<View 
+	    android:background="@drawable/view_mine_split"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.5dp"/>
+	<RelativeLayout
+        android:id="@+id/rl_mine_task_sys_task"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+         >
+
+        <ImageView
+            android:id="@+id/iv_mine_task_sys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/img_mine_sys_task" />
+
+        <TextView
+            android:id="@+id/tv_mine_task_sys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_mine_task_sys"
+            android:layout_centerVertical="true"
+            android:text="系统任务"
+            android:textColor="#323232"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_mine_task_sys_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_mine_right_small" />
+    </RelativeLayout>
+	<View 
+	    android:background="@drawable/view_mine_split"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.5dp"/>
+	<RelativeLayout
+        android:id="@+id/rl_mine_task_history"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+         >
+
+        <ImageView
+            android:id="@+id/iv_mine_task_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/img_mine_history" />
+
+        <TextView
+            android:id="@+id/tv_mine_task_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_mine_task_history"
+            android:layout_centerVertical="true"
+            android:text="历史记录"
+            android:textColor="#323232"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_mine_task_history_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_mine_right_small" />
+    </RelativeLayout>
+	<View 
+	    android:background="@drawable/view_mine_split"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.5dp"/>
+</LinearLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/vp_mine_task.xml -->

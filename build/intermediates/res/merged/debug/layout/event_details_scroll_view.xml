@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_event"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7F5F6" >
+
+    <RelativeLayout
+        android:id="@+id/rl_event_details_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+       
+
+        <LinearLayout
+            android:id="@+id/ll_event_details_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <com.baoluo.community.ui.customview.RoundImageView
+                android:id="@+id/iv_event_details_avatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+            <TextView
+                android:id="@+id/tv_event_details_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="鲍照小精灵"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_event_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vp_imgs"
+            android:background="@drawable/bg_event_details_middle_test"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="dfasd"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_attend_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp" >
+
+                <ImageView
+                    android:id="@+id/iv_attend_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/event_detail_people" />
+
+                <TextView
+                    android:id="@+id/tv_attend_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_attend_num"
+                    android:layout_alignTop="@id/iv_attend_num"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_attend_num"
+                    android:gravity="center_vertical"
+                    android:text="人数"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_attend_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_attend_num"
+                    android:layout_alignTop="@id/iv_attend_num"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/tv_attend_title"
+                    android:gravity="center_vertical"
+                    android:text="120/12"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp" >
+
+                <ImageView
+                    android:id="@+id/iv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/event_detail_location" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_location"
+                    android:layout_alignTop="@id/iv_location"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_location"
+                    android:gravity="center_vertical"
+                    android:text="深圳职业技术学校"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp" >
+
+                <ImageView
+                    android:id="@+id/iv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/event_detail_time" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_time"
+                    android:layout_alignTop="@id/iv_time"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_time"
+                    android:gravity="center_vertical"
+                    android:text="开始"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_time"
+                    android:layout_alignTop="@id/iv_time"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/tv_time"
+                    android:gravity="center_vertical"
+                    android:text="120/12"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_end_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_time"
+                    android:layout_alignTop="@id/iv_time"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_start_time"
+                    android:gravity="center_vertical"
+                    android:text="结束"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_time"
+                    android:layout_alignTop="@id/iv_time"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/tv_end_title"
+                    android:gravity="center_vertical"
+                    android:text="12/12：12.12"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+		<LinearLayout
+            android:id="@+id/rl_event_details_show_content"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/vp_imgs"
+            android:layout_alignBottom="@+id/vp_imgs"
+            android:background="@drawable/bg_event_details_middle_test"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_event_name_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="dfasd"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_attend_num_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp" >
+
+                <ImageView
+                    android:id="@+id/iv_attend_num_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/event_detail_people" />
+
+                <TextView
+                    android:id="@+id/tv_attend_title_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_attend_num_show"
+                    android:layout_alignTop="@id/iv_attend_num_show"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_attend_num_show"
+                    android:gravity="center_vertical"
+                    android:text="人数"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_attend_num_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_attend_num_show"
+                    android:layout_alignTop="@id/iv_attend_num_show"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/tv_attend_title_show"
+                    android:gravity="center_vertical"
+                    android:text="120/12"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_location_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp" >
+
+                <ImageView
+                    android:id="@+id/iv_location_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/event_detail_location" />
+
+                <TextView
+                    android:id="@+id/tv_location_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_location_show"
+                    android:layout_alignTop="@id/iv_location_show"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_location_show"
+                    android:gravity="center_vertical"
+                    android:text="深圳职业技术学校"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_time_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp" >
+
+                <ImageView
+                    android:id="@+id/iv_time_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/event_detail_time" />
+
+                <TextView
+                    android:id="@+id/tv_time_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_time_show"
+                    android:layout_alignTop="@id/iv_time_show"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_time_show"
+                    android:gravity="center_vertical"
+                    android:text="开始"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_start_time_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_time_show"
+                    android:layout_alignTop="@id/iv_time_show"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/tv_time_show"
+                    android:gravity="center_vertical"
+                    android:text="120/12"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_end_title_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_time_show"
+                    android:layout_alignTop="@id/iv_time_show"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_start_time_show"
+                    android:gravity="center_vertical"
+                    android:text="结束"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_end_time_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/iv_time_show"
+                    android:layout_alignTop="@id/iv_time_show"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/tv_end_title_show"
+                    android:gravity="center_vertical"
+                    android:text="12/12：12.12"
+                    android:textColor="#fefefe"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_event_content_show"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/btn_more_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/vp_imgs"
+            android:layout_alignRight="@id/vp_imgs"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_event_more" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_follow_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_event_details_pic"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tv_follow_member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成员列表"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_follow_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_follow_member_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="12/12"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <com.baoluo.community.ui.customview.HorizontalListView
+            android:id="@+id/hlv_attend_user"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_alignTop="@id/rl_member"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/rl_member" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/hlv_attend_user"
+            android:layout_marginTop="5dp"
+            android:background="#DBDBDB" />
+    </RelativeLayout>
+
+    <com.baoluo.community.ui.customview.ListViewForScrollView
+        android:id="@+id/lv_event_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_follow_member"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/event_details_scroll_view.xml -->

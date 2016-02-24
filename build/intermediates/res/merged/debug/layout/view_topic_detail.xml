@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_topic_details_pic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_topic_details"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/bg_htxq_jianbiankuang" />
+
+    <RelativeLayout
+        android:id="@+id/ll_topic_details_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vp_topic_details"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="7dp"
+        android:background="@android:color/transparent">
+
+        <com.baoluo.community.ui.customview.RoundImageView
+            android:id="@+id/iv_topic_details_avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="7dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/head_default"
+            lls:border_inside_color="#fffff1"
+            lls:border_thickness="2dp" />
+
+        <TextView
+            android:id="@+id/tv_topic_details_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_topic_details_avatar"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_topic_details_pic_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_topic_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vp_topic_details"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/tv_topic_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="#ffa7a7"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/tv_topic_details_hight_relpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_topic_hight_repay"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="6dp"
+            android:text="高逼格回复"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_topic_details_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_topic_details_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#666666"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_topic_details_praise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_topic_details_content"
+        android:layout_marginTop="8dp">
+
+        <ImageButton
+            android:id="@+id/ib_topic_details_oppose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_topic_details_opposenum"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_topic_low" />
+
+        <TextView
+            android:id="@+id/tv_topic_details_opposenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tv_fenge"
+            android:layout_width="0.5dip"
+            android:layout_height="15dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/ib_topic_details_oppose"
+            android:background="#666666" />
+
+        <TextView
+            android:id="@+id/tv_topic_details_praisenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_fenge"
+            android:text="0" />
+
+        <ImageButton
+            android:id="@+id/ib_topic_details_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_topic_details_praisenum"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_topic_praise" />
+    </RelativeLayout>
+    <!--<View
+        android:id="@+id/view_fenge"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@+id/rl_topic_details_praise"
+        android:layout_marginTop="8dp"
+        android:background="#B5B5B5" />-->
+</RelativeLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/view_topic_detail.xml -->

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_centerHorizontal="true"
+    android:background="#90FFFFFF"
+    android:gravity="bottom|center_horizontal"
+     >
+
+    <TextView
+        android:id="@+id/more_window_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:drawableTop="@drawable/ic_center_xinqing"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/more_window_item_margin"
+        android:textColor="#999999"
+        android:text="心情" />
+
+    <TextView
+        android:id="@+id/more_window_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_center_huodong"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/more_window_item_margin"
+        android:textColor="#999999"
+        android:text="活动"/>
+
+    <TextView
+        android:id="@+id/more_window_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_center_huati"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/more_window_item_margin"
+        android:textColor="#999999"
+        android:text="话题"/>
+
+
+
+    <ImageView
+        android:id="@+id/center_music_window_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_window_online"
+        android:padding="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/tabbar_compose_background_icon_close" />
+
+</RelativeLayout>

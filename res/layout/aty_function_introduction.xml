@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical" >
+
+   
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/function_headview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:title_value="@string/head_title_function" />
+
+    <LinearLayout
+        android:id="@+id/ll_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_function_introduction_version"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_vertical"
+            android:text="宝落1.0版功能介绍"
+            android:textColor="#1a1a1a"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/view_mine_split" />
+        
+        <TextView 
+            android:id="@+id/tv_baoluo_event_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="1.宝落*活动"
+            android:gravity="center_vertical"
+            android:textSize="13sp"
+            android:textColor="#242424"
+            />
+         <TextView 
+            android:id="@+id/tv_baoluo_event_introduction_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="随时随地掌握最新活动，一键参与报名"
+            android:layout_marginLeft="12dp"
+            android:paddingBottom="20dp"
+            android:gravity="center_vertical"
+            android:textSize="11sp"
+            android:textColor="#4a4a4a"
+            />
+          <TextView 
+            android:id="@+id/tv_baoluo_drom_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="2.宝落*奇葩宿舍"
+            android:gravity="center_vertical"
+            android:textSize="13sp"
+            android:textColor="#242424"
+            />
+          <TextView 
+            android:id="@+id/tv_baoluo_drom_introduction_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看身边小伙伴都在干什么？匿名发出，阅后即焚"
+            android:layout_marginLeft="12dp"
+            android:paddingBottom="20dp"
+            android:gravity="center_vertical"
+            android:textSize="11sp"
+            android:textColor="#4a4a4a"
+            />
+    </LinearLayout>
+
+</LinearLayout>

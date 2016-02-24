@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.baoluo.community.ui.customview.HeadView
+        android:id="@+id/hv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        lls:left_icon="@drawable/ic_fanhui_nor"
+        lls:title_value="@string/head_title_setting_msg"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        >
+
+        <TextView
+            style="@style/text_setting_main"
+            android:id="@+id/tv_setting_clear_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:text="清除缓存"
+            />
+
+        <ImageView
+            android:id="@+id/iv_setting_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_mine_right_small" />
+
+        <TextView
+            android:id="@+id/tv_setting_clear_mb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/iv_setting_right"
+            android:gravity="center_vertical"
+            android:text="5.1MB"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_fenge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_setting_publish_stranger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_setting_recive_publish"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <TextView
+                style="@style/text_setting_main"
+                android:id="@+id/tv_setting_recive_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:text="接受消息推送"
+                />
+
+            <ImageButton
+                android:id="@+id/ib_setting_recive_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/green_switch" />
+        </RelativeLayout>
+		 <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_fenge" />
+        <RelativeLayout
+            android:id="@+id/rl_settring_voice"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" >
+
+            <TextView
+                style="@style/text_setting_main"
+                android:id="@+id/tv_setting_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:text="声音"
+               	/>
+
+            <ImageButton
+                android:id="@+id/ib_setting_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/green_switch" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_fenge" />
+		
+        <RelativeLayout
+            android:id="@+id/rl_settring_stranger"
+            android:layout_width="match_parent"
+            android:layout_height="46dp" >
+
+            <TextView
+                style="@style/text_setting_main"
+                android:id="@+id/tv_setting_stranger"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:text="屏蔽陌生人"
+                 />
+
+            <ImageButton
+                android:id="@+id/ib_setting_stranger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/green_switch" />
+        </RelativeLayout>
+       
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/bg_fenge" />
+    </LinearLayout>
+
+
+</LinearLayout><!-- From: file:/E:/work/Docs/workspace/Android_BaoLuo_Community/res/layout/aty_msg_setting.xml -->

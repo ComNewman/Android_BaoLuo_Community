@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lls="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_send_color">
+    
+    <RelativeLayout 
+        android:id="@+id/rl_2_content"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="@dimen/send_margin_width"
+        android:layout_marginRight="@dimen/send_margin_width"
+        android:padding="6dp"
+        android:background="@drawable/bg_white_radius_border">
+        <ImageView 
+            android:id="@+id/iv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_send_edit"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_content"
+            android:layout_alignTop="@id/iv_content"
+            android:layout_alignBottom="@id/iv_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:textSize="@dimen/send_normal_font_size"
+            android:textColor="@color/send_text_color"
+            android:text="内容"/>
+        <EditText 
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/iv_content"
+            android:background="@color/transparent"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/send_text_color_tint"
+            android:textSize="@dimen/send_normal_font_size"
+            android:gravity="top|left"
+            android:hint="内容字数不能超过200个字"/>
+    </RelativeLayout>
+    
+    
+</RelativeLayout>
